@@ -1,17 +1,27 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+
 {% block content %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HOMEPAGE</title>
-</head>
-<body>
-    <h1>This is the homepage</h1>
-</body>
+<div class="container">
+    <div class="row h-100">
+        <div class="col-7 col-md-6">
+            <h1 class="display-1">Top Music Brands</h1>
+        </div>
+        <div>
+            <h4>
+                <a href="" class="btn btn-light">Shop the Collection</a>
+            </h4>
+        </div>
+    </div>
+</div>
 </html>
 {% endblock %}
