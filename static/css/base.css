@@ -3,12 +3,13 @@ html {
 }
 
 body {
-    background: url('/media/GettyImages-544460492.jpg') no-repeat center center fixed;
+    background: url('/media/guitar.jpg/') fixed no repeat;
     background-size: cover;
-    height: calc(100vh - 164px);
+    height: 70vh;
     color: #555;
     font-family: 'Lato';
 }
+
 
 /* from Bulma */
 .icon {
@@ -37,6 +38,7 @@ body {
     background: black;
     color: white;
 }
+
 
 .shop-now-button:hover,
 .shop-now-button:active,
@@ -79,3 +81,4 @@ body {
         padding-top: 164px;
     }
 }
+
