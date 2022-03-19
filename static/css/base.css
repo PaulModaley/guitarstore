@@ -6,10 +6,13 @@ body {
     background: url('/media/guitar.jpg/') fixed no repeat;
     background-size: cover;
     height: 70vh;
-    color: #555;
+    color: black;
     font-family: 'Comfortaa';
 }
 
+.jumbotron {
+    background-image: url('/media/guitar.jpg');
+}
 
 /* from Bulma */
 .icon {
@@ -57,6 +60,7 @@ body {
 .border-black {
     border: 1px solid black !important;
 }
+
 
 /* -------------------------------- Media Queries */
 
