@@ -16,6 +16,7 @@ body {
     background-color:#711F31;
 }
 
+
 .form-control {
     color: #711F31; 
 }
@@ -30,7 +31,7 @@ body {
 }
 
 .jumbotron {
-    background-image: url('/media/guitarist.png');
+    background-image: url('/media/GettyImages-1283477913.jpg');
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     color: white;
