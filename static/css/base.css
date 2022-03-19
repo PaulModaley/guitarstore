@@ -30,7 +30,7 @@ body {
 }
 
 .jumbotron {
-    background-image: url('/media/guitar.jpg');
+    background-image: url('/media/guitarist.png');
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     color: white;
