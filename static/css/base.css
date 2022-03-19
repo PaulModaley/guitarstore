@@ -3,15 +3,42 @@ html {
 }
 
 body {
-    background: url('/media/guitar.jpg/') fixed no repeat;
-    background-size: cover;
-    height: 70vh;
-    color: black;
+    color: #711F31;
     font-family: 'Comfortaa';
+    background-color: #ffff;
+}
+
+.navbar {
+    background-color:#711F31;
+}
+
+.navfill {
+    background-color:#711F31;
+}
+
+.form-control {
+    color: #711F31; 
+}
+
+.btn {
+    color: white;
+    background-color: #711F31;
+}
+
+.logo-font {
+    background-color: #711F31;
 }
 
 .jumbotron {
     background-image: url('/media/guitar.jpg');
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    color: white;
+    padding-top: 25px;
+}
+
+.display-4 {
+    padding-top: 90px;
 }
 
 /* from Bulma */
@@ -49,12 +76,12 @@ body {
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-    background: #222;
+    background: #711F31;
     color: white;
 }
 
 .text-black {
-    color: #000 !important;
+    color: #711F31; !important;
 }
 
 .border-black {
