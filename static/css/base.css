@@ -8,6 +8,8 @@ body {
     background-color: #ffff;
 }
 
+/* Nav bar styling */
+
 .navbar {
     background-color:#711F31;
 }
@@ -16,6 +18,38 @@ body {
     background-color:#711F31;
 }
 
+#guitars-link {
+    color: #ffff;
+}
+
+#all-products-link {
+    color: #ffff;
+}
+
+#keys-link {
+    color: #ffff;
+}
+
+#audio-link {
+    color: #ffff;
+}
+
+#guitars-link:hover {
+    color: #E0AF3A;
+}
+
+#all-products-link:hover {
+    color: #E0AF3A;
+}
+
+#keys-link:hover {
+    color: #E0AF3A;
+}
+
+#audio-link:hover {
+    color: #E0AF3A;
+}
+/* end nav bar styling */
 
 .form-control {
     color: #711F31; 
