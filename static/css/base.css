@@ -69,11 +69,11 @@ body {
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     color: white;
-    padding-top: 25px;
+    padding-top: 20px;
  }
 
 .display-4 {
-    padding-top: 90px;
+    padding-top: 120px;
 }
 
 /* from Bulma */
@@ -101,8 +101,8 @@ body {
 }
 
 .btn:hover {
-    background: #9E3845;
-    color: #E0AF3A;
+    background: #E0AF3A;
+    color: #9E3845;
 }
 
 
@@ -112,6 +112,21 @@ body {
 
 .border-black {
     border: 1px solid black !important;
+}
+
+#delivery-banner {
+    background-color: #E0AF3A;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+#banner-text {
+    margin: auto;
+    width: 50%;
+}
+
+.my-1 {
+    text-align: center;
 }
 
 
