@@ -70,7 +70,7 @@ body {
     -webkit-background-size: cover;
     color: white;
     padding-top: 25px;
-}
+ }
 
 .display-4 {
     padding-top: 90px;
@@ -93,27 +93,18 @@ body {
     width: fit-content;
 }
 
-.shop-now-button {
-    background: black;
-    color: white;
-    min-width: 260px;
-}
+/* button styling */
 
-.btn-black {
-    background: black;
-    color: white;
-}
-
-
-.shop-now-button:hover,
-.shop-now-button:active,
-.shop-now-button:focus,
-.btn-black:hover,
-.btn-black:active,
-.btn-black:focus {
+.btn {
     background: #711F31;
     color: white;
 }
+
+.btn:hover {
+    background: #9E3845;
+    color: #E0AF3A;
+}
+
 
 .text-black {
     color: #711F31; !important;
