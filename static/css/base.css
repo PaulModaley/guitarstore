@@ -53,7 +53,9 @@ body {
 
 .form-control {
     color: #711F31; 
+    border-color: #711F31;
 }
+
 
 .btn {
     color: white;
@@ -130,27 +132,30 @@ body {
 }
 
 
-/* -------------------------------- Media Queries */
+-------------------------------- Media Queries
 
 /* Slightly larger container on xl screens */
-@media (min-width: 1200px) {
+/* @media (min-width: 1200px) {
   .container {
     max-width: 80%;
   }
-}
+} */
 
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
-    .fixed-top-desktop-only {
+    .fixed-top {
         position: fixed;
         top: 0;
         right: 0;
         left: 0;
         z-index: 1030;
-    }
+    } 
 
     .header-container {
         padding-top: 164px;
     }
 }
+
+
+
 
