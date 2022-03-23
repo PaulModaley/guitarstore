@@ -67,11 +67,15 @@ body {
 }
 
 .jumbotron {
-    background-image: url('/media/GettyImages-1283477913.jpg');
+    background-image: url('/media/guitarist.png');
     background-repeat: no-repeat;
     -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     color: white;
     padding-top: 20px;
+    /* height: 540px; */
  }
 
 .display-4 {
@@ -130,6 +134,12 @@ body {
 .my-1 {
     text-align: center;
 }
+
+.icons:hover {
+    color: #E0AF3A;
+}
+
+
 
 
 
