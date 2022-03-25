@@ -60,6 +60,7 @@ body {
 .btn {
     color: white;
     background-color: #711F31;
+    
 }
 
 .logo-font {
@@ -73,13 +74,15 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    color: #E0AF3A;
     padding-top: 20px;
-    /* height: 540px; */
+    margin-top: 50px;
+    height: 440px;
  }
 
 .display-4 {
     padding-top: 120px;
+    margin-top: 100px;
+    color: white;
 }
 
 /* from Bulma */
