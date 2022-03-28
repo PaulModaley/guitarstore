@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div style="margin-top: 150px;"></div>
+
+
+<div class="my-5">
+<h1>Profile</h1>
+<p>Complete the form below so that we can stay in touch with you about your orders.</p>
+<form class="login" method="POST" action="{% url 'account_login' %}">
+    {% csrf_token %}
+    <div>
+        <label>First Name</label><br>
+        <input type="text" name="first">
+    </div>
+    <div>
+        <label>Last Name</label><br>
+        <input type="text" name="last">
+    </div>
+    <div>
+        <label>Mobile Number</label><br>
+        <input type="text" name="mobile">
+    </div>
+    <button class="primaryAction" type="submit">Submit Profile</button>
+  </form>
+</div>
+{% endblock %}
