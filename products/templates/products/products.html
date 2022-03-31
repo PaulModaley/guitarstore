@@ -8,11 +8,18 @@
     
 <h1>All Products</h1>
 
-<div class="container-fluid">
+
+
+<div class="container ">
     <div class="row products">
+       
         {% for product in products %}
-        <div class="card justify-content-center  m-5 pb-5 shadow-sm">
-            <div class="inner-card text-center m-5 pb-5">
+        <div class="col-sm-2">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                {{product.name}}
+            </div>          
+            <div class="panel-body">
                 {% if product.image %}
                 <a href="{% url 'product_detail' product.id %}">
                     <img class="card-img-top" src="{{ product.image.url }}" alt="{{ product.name }}">
@@ -26,13 +33,14 @@
                     <h3>£{{ product.price }}</h3>
                 </div>
 
-                <div class="px-2 mt-3">
-
+                <!-- <div class="px-2 mt-3">
+                 
                     <button class="btn btn-primary px-3"><a href="{% url 'product_detail' product.id %}">See
                             More!</a></button>
 
-                </div>
+                </div> -->
             </div>
+        </div>
         </div>
         {% endfor %}
     </div>
