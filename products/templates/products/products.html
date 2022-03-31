@@ -12,18 +12,18 @@
     <div class="row products">
         {% for product in products %}
         <div class="card justify-content-center">
-            <div class="inner-card text-center">
+            <div class="inner-card text-center m-5 pb-5">
                 {% if product.image %}
                 <a href="{% url 'product_detail' product.id %}">
-                    <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
+                    <img class="card-img-top" src="{{ product.image.url }}" alt="{{ product.name }}">
                 </a>
                 {% else %}
                 <a href="{% url 'product_detail' product.id %}">
-                    <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                    <img class="card-img-top" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
                 </a>
                 {% endif %}
                 <div class="px-2">
-                    <h3>{{ product.price }}£</h3>
+                    <h3>£{{ product.price }}</h3>
                 </div>
 
                 <div class="px-2 mt-3">
