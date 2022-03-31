@@ -10,16 +10,13 @@
 
 
 
-<div class="container ">
+<div class="container-fluid center">
     <div class="row products">
        
         {% for product in products %}
         <div class="col-sm-2">
-        <div class="panel panel-primary">
-            <div class="panel-heading">
-                {{product.name}}
-            </div>          
-            <div class="panel-body">
+        <div class="panel panel-primary">        
+            <div class="panel-body sm-2">
                 {% if product.image %}
                 <a href="{% url 'product_detail' product.id %}">
                     <img class="card-img-top" src="{{ product.image.url }}" alt="{{ product.name }}">
@@ -29,8 +26,13 @@
                     <img class="card-img-top" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
                 </a>
                 {% endif %}
-                <div class="px-2">
+                <div class="row">
+                <div class="panel-heading">
+                    <p style="font-size: small; text-align: center;">{{product.name}}</p>
+                </div>  
+                <div class="px-2" style="margin-top: 10px;">
                     <h3>£{{ product.price }}</h3>
+                </div>
                 </div>
 
                 <!-- <div class="px-2 mt-3">
