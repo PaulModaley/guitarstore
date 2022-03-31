@@ -14,7 +14,7 @@
     <div class="row products">
        
         {% for product in products %}
-        <div class="col-sm-2">
+        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2">
         <div class="panel panel-primary">        
             <div class="panel-body sm-2">
                 {% if product.image %}
@@ -27,8 +27,8 @@
                 </a>
                 {% endif %}
                 <div class="row">
-                <div class="panel-heading">
-                    <p style="font-size: small; text-align: center;">{{product.name}}</p>
+                <div class="card-body pb-0">
+                    <p class="mb-0" style="font-size: small; text-align: center;">{{product.name}}</p>
                 </div>  
                 <div class="px-2" style="margin-top: 10px;">
                     <h3>£{{ product.price }}</h3>
