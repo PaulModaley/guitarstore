@@ -6,7 +6,8 @@
 
 <div class="my-5">
     
-<h1>All Products</h1>
+
+    <h1 style="text-align: center;">All Products</h1>
 
 
 
@@ -16,7 +17,7 @@
         {% for product in products %}
         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2">
         <div class="panel panel-primary">        
-            <div class="panel-body sm-2">
+            <div class="panel-body sm-2" style="transform: none;">
                 {% if product.image %}
                 <a href="{% url 'product_detail' product.id %}">
                     <img class="card-img-top" src="{{ product.image.url }}" alt="{{ product.name }}">
@@ -28,24 +29,25 @@
                 {% endif %}
                 <div class="row">
                 <div class="card-body pb-0">
-                    <p class="mb-0" style="font-size: small; text-align: center;">{{product.name}}</p>
+                    <p class="mb-0" style="font-size: small; text-align: center; height: 80px;">{{product.name}}<br></p>
                 </div>  
-                <div class="px-2" style="margin-top: 10px;">
-                    <h3>£{{ product.price }}</h3>
+                <div class="px-2" style="height: auto; margin: auto; width: 100%;">
+                    <h3 style="text-align: center;">£{{ product.price }}</h3>
                 </div>
                 </div>
 
-                <!-- <div class="px-2 mt-3">
+                <div class="px-2 mt-3">
                  
                     <button class="btn btn-primary px-3"><a href="{% url 'product_detail' product.id %}">See
                             More!</a></button>
 
-                </div> -->
+                </div>
             </div>
         </div>
         </div>
         {% endfor %}
     </div>
+
 
 </div>
 <!-- paginator links (https://docs.djangoproject.com/en/4.0/topics/pagination/)-->

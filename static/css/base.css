@@ -159,6 +159,10 @@ body {
       }
 }
 
+.panel-primary {
+    display: block;
+}
+
 /* Product page images */
 
 
