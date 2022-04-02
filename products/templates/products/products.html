@@ -29,7 +29,7 @@
                 {% endif %}
                 <div class="row">
                 <div class="card-body pb-0">
-                    <p class="mb-0" style="font-size: small; text-align: center; height: 80px;">{{product.name}}<br></p>
+                    <p class="mb-0" style="font-size: small; text-align: center; height: 80px;"><a href="{% url 'product_detail' product.id %}" style="text-decoration: none; color: #711F31;">{{product.name}}<br></p></a>
                 </div>  
                 <div class="px-2" style="height: auto; margin: auto; width: 100%;">
                     <h3 style="text-align: center;">£{{ product.price }}</h3>
@@ -38,13 +38,7 @@
 
                 <div class="px-2 mt-3">
                  
-                    <button class="btn px-3" style="text-decoration: none; padding"><a href="{% url 'product_detail' product.id %}">See
-                            More!</a></button>
-
-                </div>
-                <div class="px-2 mt-3">
-                 
-                    <button class="btn px-3" style="text-decoration: none; padding"><a href="{% url 'product_detail' product.id %}">Add to Cart</a></button>
+                    <button class="btn px-3 two" id="cart" style="text-decoration: none; text-decoration: none;"><a href="{% url 'product_detail' product.id %}" style="text-decoration: none; color: white;">Add to Cart</a></button>
 
                 </div>
             </div>
