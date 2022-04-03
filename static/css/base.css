@@ -253,12 +253,12 @@ body {
   
 -------------------------------- Media Queries
 
-/* Slightly larger container on xl screens */
+Slightly larger container on xl screens */
 /* @media (min-width: 1200px) {
   .container {
     max-width: 80%;
   }
-} */
+}
 
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
@@ -275,6 +275,11 @@ body {
     }
 }
 
-
-
+@media (max-width: 741px) {
+.display-4 {
+    padding-top: 50px;
+    margin-top: 60px;
+    color: white;
+    }
+}
 
