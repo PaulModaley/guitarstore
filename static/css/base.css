@@ -146,13 +146,15 @@ body {
     color: #E0AF3A;
 }
 /* panels */
+
 .panel-footer {
     background-color: #E0AF3A;
-    
+    padding: 5px;
+    border-radius: 9px;
 }
 
 #panel-footer {
-    font-size: 20px;
+    font-size: 25px;
 }
 .panel-body {
         padding: 10px;
@@ -164,11 +166,25 @@ body {
       }
 }
 
+#panel-footer-text {
+    text-decoration: none;
+    color: #711F31;
+}
+
+#panel-footer-text:link, a:visited,  a:hover, a:active
+{
+    text-decoration: none;
+}
+
 .panel-primary {
     display: block;
 }
 
+
+
 /* Product page */
+
+/* cart buttons */
 
 #cart {
     margin: auto;
@@ -250,6 +266,10 @@ body {
     font-weight: 700;
   }
   
+  /* images */
+  .img-fluid {
+    max-width: 50%;
+  }
   
 -------------------------------- Media Queries
 
@@ -258,7 +278,7 @@ Slightly larger container on xl screens */
   .container {
     max-width: 80%;
   }
-}
+} */
 
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {

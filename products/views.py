@@ -1,7 +1,8 @@
 from django.shortcuts import render
 from django.db.models import Q
 from .models import Product, Category
-from django.core.paginator import Paginator 
+from django.core.paginator import Paginator
+from django.shortcuts import get_object_or_404
 
 # Create your views here.
 def profile(request):
@@ -33,6 +34,7 @@ def all_products(request):
         
     }
     return render(request, 'products/products.html', context)
+
 def product_detail(request, product_id):
     """ A view to show individual product details """
 

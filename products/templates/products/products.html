@@ -20,16 +20,16 @@
             <div class="panel-body sm-2" style="transform: none;">
                 {% if product.image %}
                 <a href="{% url 'product_detail' product.id %}">
-                    <img class="card-img-top" src="{{ product.image.url }}" alt="{{ product.name }}">
+                    <img class="card-img-top img-fluid mx-auto d-block" src="{{ product.image.url }}" alt="{{ product.name }}">
                 </a>
                 {% else %}
                 <a href="{% url 'product_detail' product.id %}">
-                    <img class="card-img-top" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                    <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
                 </a>
                 {% endif %}
                 <div class="row">
                 <div class="card-body pb-0">
-                    <p class="mb-0" style="font-size: small; text-align: center; height: 80px;"><a href="{% url 'product_detail' product.id %}" style="text-decoration: none; color: #711F31;">{{product.name}}<br></p></a>
+                    <p class="mb-0" style="font-size: small; text-align: center;"><a href="{% url 'product_detail' product.id %}" style="text-decoration: none; color: #711F31;">{{product.name}}<br></p></a>
                 </div>  
                 <div class="px-2" style="height: auto; margin: auto; width: 100%;">
                     <h3 style="text-align: center;">£{{ product.price }}</h3>
