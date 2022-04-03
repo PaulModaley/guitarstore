@@ -15,7 +15,7 @@
     <div class="row products">
        
         {% for product in products %}
-        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2">
+        <div class="col-sm-6 col-md-6 col-lg-3 col-xl-2">
         <div class="panel panel-primary">        
             <div class="panel-body sm-2" style="transform: none;">
                 {% if product.image %}
@@ -32,7 +32,7 @@
                     <p class="mb-0" style="font-size: small; text-align: center;"><a href="{% url 'product_detail' product.id %}" style="text-decoration: none; color: #711F31;">{{product.name}}<br></p></a>
                 </div>  
                 <div class="px-2" style="height: auto; margin: auto; width: 100%;">
-                    <h3 style="text-align: center;">£{{ product.price }}</h3>
+                    <h3 id="product-price">£{{ product.price }}</h3>
                 </div>
                 </div>
 
@@ -50,15 +50,15 @@
 
 </div>
 <!-- paginator links (https://docs.djangoproject.com/en/4.0/topics/pagination/)-->
-<div class="container">
-    <div class="row center table-glass paginator">
+<div class="container-fluid bottom">
+    <div class="row center table-glass paginator" style="text-align: center;">
         <span class="col-12 step-links">
             {% if products.has_previous %}
             <a class="btn btn-primary px-3" href="?page=1">&laquo; first</a>
             <a class="btn btn-primary px-3" href="?page={{ products.previous_page_number }}">previous</a>
             {% endif %}
 
-            <span class="current">
+            <span class="current span12 text-center">
                 Page {{ products.number }} of {{ products.paginator.num_pages }}.
             </span>
 

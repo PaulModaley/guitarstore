@@ -149,7 +149,7 @@ body {
 
 .panel-footer {
     background-color: #E0AF3A;
-    padding: 5px;
+    padding: 5px 5px 5px 5px;
     border-radius: 9px;
 }
 
@@ -180,7 +180,14 @@ body {
     display: block;
 }
 
-/* Product page */
+
+/* product page */
+#product-price {
+    margin-top: 12px;
+    text-align: center;
+}
+
+/* Product details page */
 
 .fa-star {
     color:#711F31;
@@ -188,6 +195,11 @@ body {
 
 .text-muted {
      color:#711F31;
+}
+
+.paginator {
+    text-align: center;
+    margin-top: 40px;
 }
 
 /* cart buttons */

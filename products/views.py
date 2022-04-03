@@ -24,7 +24,7 @@ def all_products(request):
             category = request.GET['category']           
             products = products.filter(category__name=category)           
 
-    paginator = Paginator(products, 6) # Show 6 products per page.
+    paginator = Paginator(products, 8) # Show 8 products per page.
     page_number = request.GET.get('page')
     products = paginator.get_page(page_number)
 
