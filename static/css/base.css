@@ -182,6 +182,14 @@ body {
 
 /* Product page */
 
+.fa-star {
+    color:#711F31;
+} 
+
+.text-muted {
+     color:#711F31;
+}
+
 /* cart buttons */
 
 #cart {
