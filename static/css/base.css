@@ -8,7 +8,14 @@ body {
     background-color: #ffff;
 }
 
-/* Nav bar styling */
+/* Nav bar and header styling */
+.fab {
+    font-size: small;
+}
+
+.btn-outline-light {
+    background-color: blue;
+}
 
 .navbar {
     background-color:#711F31;
@@ -60,11 +67,14 @@ body {
 .btn {
     color: white;
     background-color: #711F31;
-    
 }
 
 .logo-font {
     background-color: #711F31;
+}
+
+.logo-txt {
+    font-size: x-large;
 }
 
 .jumbotron {
@@ -94,9 +104,6 @@ body {
     width: 1.5rem;
 }
 
-.logo-font {
-    text-transform: uppercase;
-}
 
 .main-logo-link {
     width: fit-content;
@@ -123,10 +130,12 @@ body {
     border: 1px solid black !important;
 }
 
+/* DELIVERY BANNER */
+
 #delivery-banner {
     background-color: #E0AF3A;
-    padding-top: 2px;
-    padding-bottom: 2px;
+    padding-top: 1px;
+    padding-bottom: 1px;
 }
 
 #banner-text {
@@ -136,6 +145,8 @@ body {
 
 .my-1 {
     text-align: center;
+    font-size: small;
+    color: #711F31;
 }
 
 .icons:hover {
