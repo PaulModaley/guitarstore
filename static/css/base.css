@@ -140,8 +140,10 @@ body {
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
     animation-duration: 1s;
     animation-name: social;
+    animation-fill-mode: forwards;
 }
 
+/* inspired by W3Schools https://www.w3schools.com/css/tryit.asp?filename=trycss3_animation1 */
 
 @keyframes social {
   from {background-color: #711F31;
