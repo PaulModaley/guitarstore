@@ -54,8 +54,8 @@
     <div class="row center table-glass paginator" style="text-align: center;">
         <span class="col-12 step-links">
             {% if products.has_previous %}
-            <a class="btn btn-primary px-3" href="?page=1">&laquo; first</a>
-            <a class="btn btn-primary px-3" href="?page={{ products.previous_page_number }}">previous</a>
+            <a class="btn px-3" href="?page=1">&laquo; first</a>
+            <a class="btn px-3" href="?page={{ products.previous_page_number }}">previous</a>
             {% endif %}
 
             <span class="current span12 text-center">
@@ -63,8 +63,8 @@
             </span>
 
             {% if products.has_next %}
-            <a class="btn btn-primary px-3" href="?page={{ products.next_page_number }}">next</a>
-            <a class="btn btn-primary px-3" href="?page={{ products.paginator.num_pages }}">last &raquo;</a>
+            <a class="btn px-3" href="?page={{ products.next_page_number }}">next</a>
+            <a class="btn px-3" href="?page={{ products.paginator.num_pages }}">last &raquo;</a>
             {% endif %}
         </span>
     </div>

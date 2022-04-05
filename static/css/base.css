@@ -53,6 +53,9 @@ body {
     color: #E0AF3A;
 }
 
+.list-inline-item {
+    margin-left: -10px;
+}
 
 /* end nav bar styling */
 
