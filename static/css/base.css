@@ -102,6 +102,32 @@ body {
     width: 1.5rem;
 }
 
+/* Underline animation from 30 Seconds of Code https://www.30secondsofcode.org/css/s/hover-underline-animation */
+
+.nav-link {
+    display: inline-block;
+    position: relative;
+    color: #E0AF3A;
+}
+
+.nav-link:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #E0AF3A;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .nav-link:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
 
 .main-logo-link {
     width: fit-content;
