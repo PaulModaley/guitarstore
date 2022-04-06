@@ -131,6 +131,9 @@ body {
     transform-origin: bottom left;
   }
 
+.navbar-toggler {
+    color: #E0AF3A;
+}
 
 .main-logo-link {
     width: fit-content;
@@ -572,6 +575,10 @@ Slightly larger container on xl screens */
     font-size: smaller;
     }
 }
-
-
-
+/* 
+Hide search bar in mobile view */
+@media (max-width: 991px) {
+#search-bar {
+    display: none;
+    }
+}
