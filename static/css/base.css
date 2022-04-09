@@ -496,6 +496,21 @@ button:focus {
     color: #fff
 }
 
+#checkout-btn {
+    border: none;
+    border-radius: 10px;
+    background-color: #E0AF3A;
+    color: #711F31;
+    padding: 8px 15px;
+    margin: 20px 0px;
+    cursor: pointer
+}
+
+#checkout-btn:hover {
+    background-color: #711F31;
+    color: #ffff;
+}
+
 #checkout {
     float: left
 }
