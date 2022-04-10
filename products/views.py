@@ -12,7 +12,24 @@ def all_products(request):
     """ A view to show products / searched products /selected category""" 
     products = Product.objects.all()
     query = None
-    categorys = None   
+    categorys = None
+    sort = None
+    direction = None
+
+    if request.GET:
+        if 'sort' in request.GET:
+            sortkey = request.GET['sort']
+            sort = sortkey
+            if sortkey == 'name':
+                sortkey = 'lower_name'
+                products = products.annotate(lower_name=Lower('name'))
+            if sortkey == 'category':
+                sortkey = 'category__name'
+            if 'direction' in request.GET:
+                direction = request.GET['direction']
+                if direction == 'desc':
+                    sortkey = f'-{sortkey}'
+            products = products.order_by(sortkey)
 
     if request.GET:
         if 'q' in request.GET:
@@ -21,10 +38,11 @@ def all_products(request):
             products = products.filter(queries)                       
             
         if 'category' in request.GET:
-            category = request.GET['category']           
-            products = products.filter(category__name=category)           
+            categories = request.GET['category'].split(',')
+            products = products.filter(category__name__in=categories)
+            categories = Category.objects.filter(name__in=categories)          
 
-    paginator = Paginator(products, 8) # Show 8 products per page.
+    paginator = Paginator(products, 12) # Show 8 products per page.
     page_number = request.GET.get('page')
     products = paginator.get_page(page_number)
 

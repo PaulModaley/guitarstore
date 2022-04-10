@@ -111,7 +111,7 @@
                         </div>
                     </li>
                     <li class="list-inline-item" id="icons">
-                      <a class="{% if grand_total %} {% else %}text-black{% endif %} nav-link" href="" id="user-options">
+                      <a class="{% if wishlist_items %} {% else %}text-black{% endif %} nav-link" href="{% url 'wishlist/wishlist.html' %}" id="user-options">
                           <div class="text-center">
                               <div class="icons"><i class="fas fa-heart fa-sm"></i></div>
                               <p class="my-0">
