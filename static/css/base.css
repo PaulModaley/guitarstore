@@ -287,6 +287,23 @@ body {
     margin-top: 40px;
 }
 
+#view-cart {
+    border: none;
+    border-radius: 10px;
+    background-color: #711F31;
+    color: white;
+    padding: 8px 15px;
+    margin: 20px 0px;
+    cursor: pointer
+}
+
+#view-cart:hover {
+    background-color: #E0AF3A;
+    color: #711F31;
+    box-shadow: 0 4px 15px 0 #711F31;
+    font-weight: bold;
+    animation: pulse 0.5s;
+}
 /* cart buttons */
 
 #cart {

@@ -51,14 +51,18 @@
                         </div>
 
                         <div class="col-12">
-                            <a href="{% url 'products' %}" class="btn rounded-0 mt-5">
+                            <div class="my-3">
+                                <button input type="submit" class="btn px-3 two" id="cart" class="btn rounded-0 text-uppercase mt-5" value="Add to Bag">Add to Cart</button>
+                            </div>
+                            <div class="my-3">
+                            <a href="{% url 'view_cart' %}" id="view-cart"><span>View Cart</span></a>
+                            </div>
+                            <a href="{% url 'products' %}" class="btn rounded-0">
                                 <span class="icon">
                                     <i class="fas fa-chevron-left"></i>
                                 </span>
                                 <span class="text-uppercase">Keep Shopping</span>
                             </a>
-                            <input type="submit" id="add_to_cart" class="btn rounded-0 text-uppercase mt-5" value="Add to Bag">
-                           
                         </div>
                         <input type="hidden" name="redirect_url" value="{{ request.path }}">
                     </div>
