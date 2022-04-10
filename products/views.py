@@ -12,7 +12,7 @@ def all_products(request):
     """ A view to show products / searched products /selected category""" 
     products = Product.objects.all()
     query = None
-    category = None   
+    categorys = None   
 
     if request.GET:
         if 'q' in request.GET:
