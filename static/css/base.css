@@ -57,6 +57,14 @@ body {
     margin-left: -10px;
 }
 
+.fa-shopping-cart {
+    color: #711F31;
+}
+
+.fa-heart {
+    color: #711F31;
+}
+
 /* end nav bar styling */
 
 .form-control {
@@ -424,7 +432,7 @@ CSS based on code by from Omkar Bailkeri at BBBootstrap */
 
 input,
 textarea {
-    background-color: #white;
+    background-color: white;
     padding: 8px 15px 8px 15px;
     width: 100%;
     border-radius: 5px !important;
@@ -499,17 +507,24 @@ button:focus {
 #checkout-btn {
     border: none;
     border-radius: 10px;
-    background-color: #E0AF3A;
-    color: #711F31;
+    background-color: #711F31;
+    color: white;
     padding: 8px 15px;
     margin: 20px 0px;
     cursor: pointer
 }
 
 #checkout-btn:hover {
-    background-color: #711F31;
-    color: #ffff;
+    background-color: #E0AF3A;
+    color: #711F31;
+    box-shadow: 0 4px 15px 0 #711F31;
+    font-weight: bold;
+    animation: pulse 0.5s;
 }
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 var(--hover); }
+  }
 
 #checkout {
     float: left
