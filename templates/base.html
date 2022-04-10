@@ -111,7 +111,7 @@
                         </div>
                     </li>
                     <li class="list-inline-item" id="icons">
-                      <a class="{% if wishlist_items %} {% else %}text-black{% endif %} nav-link" href="{% url 'wishlist/wishlist.html' %}" id="user-options">
+                      <a class="{% if grand_total %} {% else %}text-black{% endif %} nav-link" href="" id="user-options">
                           <div class="text-center">
                               <div class="icons"><i class="fas fa-heart fa-sm"></i></div>
                               <p class="my-0">
@@ -130,7 +130,7 @@
                             <div class="icons"><i class="fas fa-shopping-cart fa-sm"></i></div>
                             <p class="my-0">
                               {% if grand_total %}
-                              ${{ grand_total|floatformat:2 }}
+                              £{{ grand_total|floatformat:2 }}
                           {% else %}
                               £0.00
                           {% endif %}

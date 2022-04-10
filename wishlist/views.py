@@ -15,7 +15,7 @@ def add_to_wishlist(request, item_id):
     cart = request.session.get('wishlist', {})
 
     if item_id in list(wishlist.keys()):
-        wislist[item_id] += quantity
+        wishlist[item_id] += quantity
     else:
         wishlist[item_id] = quantity
 
