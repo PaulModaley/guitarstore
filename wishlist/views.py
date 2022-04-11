@@ -13,12 +13,13 @@ def add_to_wishlist(request, item_id):
     """ Add a specified product to the wishlist """
 
     redirect_url = request.POST.get('redirect_url')
-    wishlist = request.session.get('wishlist', {})
+    add_to_wishlist = request.session.get('wishlist', {})
 
-    if item_id in list(wishlist.keys()):
+    if item_id in add_to_wishlist(wishlist.keys()):
         wishlist[item_id]
         
     request.session['wishlist'] = wishlist
+    print(request.session['wishlist'])
     return redirect(redirect_url)
 
 
