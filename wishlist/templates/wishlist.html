@@ -12,62 +12,65 @@
 {% block content %}
 
 
-<!-- ------ Cart ----------------------
-HTML and CSS based on code by from Omkar Bailkeri at BBBootstrap -->
+
 <div class="my-6"></div>
-<div class="container px-4 py-5 mx-auto">
-  <div class="row d-flex justify-content-center">
-      <div class="col-5">
-          <h2 class="heading cart" style="text-align: center;">Your Wishlist</h4>
-      </div>
-      {% endblock %}
-
-      {% if wishlist %}
-      <div class="table-responsive rounded">
-        <table class="table">
-            <thead class="text-black">
-                <tr>
-                    <th scope="col">Product Info</th>
-                    <th scope="col"></th>
-                    <th scope="col">Price</th>
-                    <th scope="col">Qty</th>
-                    <th scope="col">Subtotal</th>
-                </tr>
-            </thead>
-
-            {% for item in wishlist %}
-                <tr>
-                    <td class="p-3 w-25">
-                        <img class="img-fluid rounded" src="{{ item.product.image.url }}">
-                    </td>
-                    <td class="py-3">
-                        <p class="my-0"><strong>{{ item.product.name }}</strong></p>
-                        <p class="my-0 small text-muted">SKU: {{ item.product.sku|upper }}</p>
-                    </td>
-                    <td class="py-3">
-                        <p class="my-0">£{{ item.product.price }}</p>
-                    </td>
-                    <td class="py-3 w-25">
-                        <p class="my-0">{{ item.quantity }}</p>
-                    </td>
-                    <td class="py-3">
-                        <p class="my-0">£{{ item.product.price }}</p>
-                    </td>
-                </tr>
-            {% endfor %}
-            <tr>
-            </tr>
-        </table>
-
-        
-{% else %}
-<div class="my-5 w-100 ">
-    <p class="lead mb-5 text-center">Your wishlist is empty.</p>
+    <div class="container px-4 py-5 mx-auto">
+        <div class="row d-flex justify-content-center">
+            <div class="col-5">
+                <h2 class="heading cart" style="text-align: center;">Your Wishlist</h4>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+            {% if wishlists %}
+                {% for wishlist in wishlists %}
+                    <div>
+                        <p>
+                            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                {{ wishlist.wishlist_name }}
+                            </button>
+                        </p>
+                        <div class="collapse" id="collapseExample">
+                            <div class="card card-body">
+                                <div class="table-responsive rounded">
+                                    <table class="table">
+                                        <thead class="text-black">
+                                            <tr>
+                                                <th scope="col"></th>
+                                                <th scope="col">Product Info</th>
+                                                <th scope="col">Qty</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            {% for item in product_wishlist %}
+                                                <tr>
+                                                    <td class="p-3 w-25">
+                                                        <img class="img-fluid rounded" src="{{ item.product.image.url }}">
+                                                    </td>
+                                                    <td class="py-3">
+                                                        <p class="my-0"><strong>{{ item.product.name }}</strong></p>
+                                                        <p class="my-0 small text-muted">SKU: {{ item.product.sku|upper }}</p>
+                                                    </td>
+                                                    <td class="py-3 w-25">
+                                                        <p class="my-0">{{ item.quantity }}</p>
+                                                    </td>
+                                                </tr>
+                                            {% endfor %}
+                                        </tbody>
+                                    </table>      
+                                </div>          
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            {% else %}
+                <div class="my-5 w-100 ">
+                    <p class="lead mb-5 text-center">Your wishlist is empty.</p>
+                </div>
+                <div>
+                    <button class="btn-block btn-blue"><a href="{% url 'products' %}" style="text-decoration: none; color: white;">Continue Shopping</a></span></button>
+                </div>
+            {% endif %}
+        </div>
+    </div>
 </div>
-<div>
-    <button class="btn-block btn-blue"><a href="{% url 'products' %}" style="text-decoration: none; color: white;">Continue Shopping</a></span></button>
-</div>
-    {% endif %}
-</div>
-</div>
-</div>
+{% endblock %}

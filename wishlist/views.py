@@ -1,25 +1,29 @@
-from django.shortcuts import render, redirect
-from django.shortcuts import get_object_or_404
-from products.models import Product
+from django.shortcuts import render, redirect, reverse, get_object_or_404
+from django.contrib import messages
+from django.db.models import Q
+from django.db.models.functions import Lower
+from django.shortcuts import get_object_or_404, render
+from django.views import View
+from .models import UserWishlist, WishlistProduct
+
 
 # Create your views here.
 
 def wishlist(request):
-    """ A view that renders the cart contents page """
+    """ A view that renders the wishlist page """
 
     return render(request, 'wishlist.html')
 
-def add_to_wishlist(request, item_id):
-    """ Add a specified product to the wishlist """
+class ShowWishlist(View):
 
-    redirect_url = request.POST.get('redirect_url')
-    add_to_wishlist = request.session.get('wishlist', {})
-
-    if item_id in add_to_wishlist(wishlist.keys()):
-        wishlist[item_id]
+    def get(self, request):
+        wishlists = UserWishlist.objects.filter(wishlist_owner=request.user.id).all()
+        # wishlist_products = WishlistProduct.objects.filter(wishlist=wishlists).all()
+        context = {
+            'wishlists': wishlists
+        }
         
-    request.session['wishlist'] = wishlist
-    print(request.session['wishlist'])
-    return redirect(redirect_url)
+        return render(request, 'wishlist.html', context)
+
 
 
