@@ -22,7 +22,7 @@ HTML and CSS based on code by from Omkar Bailkeri at BBBootstrap -->
       </div>
       {% endblock %}
 
-      {% if wishlist_items %}
+      {% if wishlist %}
       <div class="table-responsive rounded">
         <table class="table">
             <thead class="text-black">
@@ -35,7 +35,7 @@ HTML and CSS based on code by from Omkar Bailkeri at BBBootstrap -->
                 </tr>
             </thead>
 
-            {% for item in wishlist_items %}
+            {% for item in wishlist %}
                 <tr>
                     <td class="p-3 w-25">
                         <img class="img-fluid rounded" src="{{ item.product.image.url }}">
