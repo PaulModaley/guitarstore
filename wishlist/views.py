@@ -29,7 +29,7 @@ class ShowWishlist(View):
 def AddtoWishlist(request):
     
     if request.method == "POST":
-        #Handle incoming form data
+        #Handle data
         wishlist_name = request.POST["Wish List Name"]
         product = request.POST["Product"]
         wishlist = UserWishlist.objects.filter(user=request.user).first()
