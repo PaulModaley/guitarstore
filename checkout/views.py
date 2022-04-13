@@ -7,7 +7,7 @@ from .forms import OrderForm
 def checkout(request):
     cart = request.session.get('cart', {})
     if not cart:
-        messages.error(request, "There's nothing in your cart at the moment")
+        messages.error(request, "Your shopping cart is empty.")
         return redirect(reverse('products'))
 
     order_form = OrderForm()
@@ -16,4 +16,4 @@ def checkout(request):
         'order_form': order_form,
     }
 
-    return render(request, template, context)
+    return render(request, template, context),

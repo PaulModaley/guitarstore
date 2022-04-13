@@ -52,7 +52,7 @@ HTML and CSS based on code by from Omkar Bailkeri at BBBootstrap -->
                                             <div class="form-group">
                                                 <div class="input-group">
                                                     <div class="input-group-prepend">
-                                                        <button class="decrement-qty btn btn-sm btn-black rounded-0" 
+                                                        <button class="decrement-qty btn btn-sm btn-black rounded-50" 
                                                             data-item_id="{{ item.item_id }}" id="decrement-qty_{{ item.item_id }}">
                                                             <span>
                                                                 <i class="fas fa-minus fa-sm"></i>
@@ -64,7 +64,7 @@ HTML and CSS based on code by from Omkar Bailkeri at BBBootstrap -->
                                                         data-item_id="{{ item.item_id }}"
                                                         id="id_qty_{{ item.item_id }}">
                                                     <div class="input-group-append">
-                                                        <button class="increment-qty btn btn-sm btn-black rounded-0"
+                                                        <button class="increment-qty btn btn-sm btn-black rounded-50"
                                                             data-item_id="{{ item.item_id }}" id="increment-qty_{{ item.item_id }}">
                                                             <span>
                                                                 <i class="fas fa-plus fa-sm"></i>
@@ -77,8 +77,8 @@ HTML and CSS based on code by from Omkar Bailkeri at BBBootstrap -->
                                                 </div>
                                             </div>
                                         </form>
-                                        <a class="update-link text-info" id="remove_{{ item.item_id }}"><small>Update</small></a>
-                                        <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}"><small>Remove</small></a>
+                                        <a class="update-link text-info" id="remove_{{ item.item_id }}"><small><i class="fa fa-refresh fa-sm"></i>Update</small></i></a>
+                                        <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}"><small><i class="fa fa-trash fa-sm"></i>Remove</small></a>
                                     </td>
                                     <td class="py-3">
                                         <p class="my-0">£{{ item.product.price }}</p>
