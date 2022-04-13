@@ -136,7 +136,7 @@ HTML and CSS based on code by from Omkar Bailkeri at BBBootstrap -->
                                                 <p class="mb-1 text-left">Total (tax included)</p>
                                                 <h6 class="mb-1 text-right">£{{ grand_total|floatformat:2 }}</h6>
                                             </div>
-                                            <a href="{% url 'checkout' %}"><button class="btn-block btn-blue" id="checkout-btn"> <span> <span id="checkout">Checkout</span> <span id="check-amt">£{{ grand_total|floatformat:2 }}</span> </span> </a>
+                                            <button class="btn-block btn-blue" id="checkout-btn"><a href="{% url 'checkout' %}"><span> <span id="checkout">Checkout</a></span> <span id="check-amt">£{{ grand_total|floatformat:2 }}</span> </span></button> 
                                             <button class="btn-block btn-blue"><a href="{% url 'products' %}" style="text-decoration: none; color: white;">Continue Shopping</a></span></button>
                                         </div>
                                     </div>
