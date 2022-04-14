@@ -91,7 +91,7 @@ body {
 .jumbotron {
     background-image: url('/media/unleash.svg');
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -101,8 +101,8 @@ body {
 
 
 .display-4 {
-    padding-top: 80px;
-    margin-top: 50px;
+    padding-top: 50px;
+    margin-top: 30px;
     color: white;
 }
 
@@ -185,6 +185,12 @@ body {
     animation-fill-mode: forwards;
 }
 
+#hero-btn:hover {
+    background-color: #E0AF3A;
+    border-color: #711F31;
+    color: #711F31;
+}
+
 /* inspired by W3Schools https://www.w3schools.com/css/tryit.asp?filename=trycss3_animation1 */
 
 @keyframes social {
@@ -209,20 +215,22 @@ body {
 /* DELIVERY BANNER */
 
 #delivery-banner {
-    background-color: #E0AF3A;
+    background-color: #711F31; 
     padding-top: 1px;
     padding-bottom: 1px;
 }
 
 #banner-text {
     margin: auto;
-    width: 50%;
+    width: 100%;
+    background-color: #711F31; 
 }
 
-.my-1 {
+.banner-txt {
     text-align: center;
     font-size: medium;
-    color: #711F31;
+    color:#ffff; 
+    margin-top: -35px;
 }
 
 .text-info {
@@ -598,7 +606,7 @@ Slightly larger container on xl screens */
 
 @media (max-width: 741px) {
 .display-4 {
-    padding-top: 50px;
+    padding-top: 20px;
     margin-top: 60px;
     color: white;
     }
@@ -632,3 +640,16 @@ Hide search bar in mobile view */
     display: none;
     }
 }
+
+/* hero image on smaller screens */
+@media (max-width: 893px) {
+    .display-4 {
+        margin-top: 2px;
+        }
+    }
+
+@media (max-width: 893px) {
+        #hero-btn {
+            margin-top: -10px;
+            }
+        }
