@@ -642,14 +642,37 @@ Hide search bar in mobile view */
 }
 
 /* hero image on smaller screens */
-@media (max-width: 893px) {
+@media (max-width: 912px) {
     .display-4 {
-        margin-top: 2px;
+        margin-top: 30px;
+        font-size: 25px;
         }
     }
 
-@media (max-width: 893px) {
+@media (max-width: 912px) {
         #hero-btn {
             margin-top: -10px;
             }
         }
+
+/* Hide normal hero text col on smaller screens */
+@media (max-width: 912px) {
+    .hero-col {
+        display: none;
+        }
+    }
+
+
+
+@media (max-width: 912px) {
+.jumbotron {
+    background-image: url('/media/unleash_320x300.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 60vh;
+    }
+}
