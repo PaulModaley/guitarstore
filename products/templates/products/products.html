@@ -16,7 +16,7 @@
        
         {% for product in products %}
         <div class="col-sm-6 col-md-6 col-lg-3 col-xl-2">
-        <div class="panel panel-primary">        
+        <div class="panel panel-primary card">        
             <div class="panel-body sm-2" style="transform: none;">
                 {% if product.image %}
                 <a href="{% url 'product_detail' product.id %}">
