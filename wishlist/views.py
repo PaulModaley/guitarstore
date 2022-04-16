@@ -2,9 +2,10 @@ from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.db.models import Q
 from django.db.models.functions import Lower
-from django.shortcuts import get_object_or_404, render
+from django.shortcuts import get_object_or_404, render, HttpResponse
 from django.views import View
 from .models import UserWishlist, WishlistProduct
+from products.models import *
 
 
 # Create your views here.
@@ -13,6 +14,8 @@ def wishlist(request):
     """ A view that renders the wishlist page """
 
     return render(request, 'wishlist.html')
+
+
 
 class ShowWishlist(View):
 
@@ -26,9 +29,10 @@ class ShowWishlist(View):
         return render(request, 'wishlist.html', context)
 
 
-def AddtoWishlist(request):
+def AddtoWishlist(request, product_id):
     
     if request.method == "POST":
+        print(request.POST)
         #Handle data
         wishlist_name = request.POST["Wish List Name"]
         product = request.POST["Product"]
@@ -37,6 +41,7 @@ def AddtoWishlist(request):
             wishlist.wishlist_name = wishlist_name
             wishlist.product = product
             profile.save()
+            
         else:
             UserWishlist(
                 wishlist_name==request.wishlist_name,
@@ -44,4 +49,6 @@ def AddtoWishlist(request):
         context = {
             "Wish List Name": wishlist_name,
         }
+        
         return render(request, 'wishlist.html', context)
+        

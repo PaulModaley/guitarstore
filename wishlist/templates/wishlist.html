@@ -25,10 +25,12 @@
                 {% for wishlist in wishlists %}
                     <div>
                         <p>
-                            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                                {{ wishlist.wishlist_name }}
+                            <button class="btn" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                {{ wishlists.wishlist_name }}
                             </button>
                         </p>
+                       
+                        
                         <div class="collapse" id="collapseExample">
                             <div class="card card-body">
                                 <div class="table-responsive rounded">

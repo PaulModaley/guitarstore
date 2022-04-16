@@ -3,5 +3,6 @@ from . import views
 
 urlpatterns = [
     path('', views.ShowWishlist.as_view(), name='wishlist'),
-    # path('', views.wishlist, name='wishlist'),
+    path('AddtoWishlist/<int:product_id>/',
+         views.AddtoWishlist, name='AddtoWishlist'),
 ]
