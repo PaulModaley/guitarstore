@@ -7,8 +7,7 @@
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
                 <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
-                <a href="{% url 'products' %}?sort=rating&direction=asc" class="dropdown-item">By Rating</a>
-                <a href="{% url 'products' %}?category=price&direction=asc" class="dropdown-item">By Category</a>
+                <a href="{% url 'products' %}?sort=rating&direction=asc" class="dropdown-item">By Rating</a> 
                 <a href="/products/" class="dropdown-item">All Products</a>
             </div>
         </li>
@@ -30,9 +29,9 @@
                 Keys
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Acoustic</a>
-                <a class="dropdown-item" href="#">Digital</a>
-                <a class="dropdown-item" href="#">Keyboards</a>
+                <a class="dropdown-item" href="{% url 'products' %}?category=Piano">Piano</a>
+                <a class="dropdown-item" href="{% url 'products' %}?category=Digital">Digital</a>
+                <a class="dropdown-item" href="{% url 'products' %}?category=Keyboards">Keyboards</a>
             </div>
         </li>
 
