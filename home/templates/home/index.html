@@ -52,14 +52,14 @@
       <div class="panel panel-danger">
         <div class="panel-heading text-center"></div>
         <div class="panel-body"><img src="/media/guitar_product_image.png" class="img-responsive" style="width:100%;" alt="Image"></div>
-        <div class="panel-footer text-center"><a href="" id="panel-footer-text"><h1 id="panel-footer" style="color: #711F31;">Guitars</h1></a></div>
+        <div class="panel-footer text-center"><a href="{% url 'products' %}?category=Acoustic Guitars,Classical Guitar,Electric Guitars" id="panel-footer-text"><h1 id="panel-footer" style="color: #711F31;">Guitars</h1></a></div>
       </div>
     </div>
     <div class="col-sm-3"> 
       <div class="panel panel-success">
         <div class="panel-heading text-center"></div>
         <div class="panel-body"><img src="/media/keys_product image.png" class="img-responsive" style="width:100%" alt="Image"></div>
-        <div class="panel-footer text-center"><h1 id="panel-footer">Keys</h1></div>
+        <div class="panel-footer text-center"><a href="{% url 'products' %}?category=Piano,Keyboard,Digital" id="panel-footer-text"><h1 id="panel-footer" style="color: #711F31;">Keys</h1></a></div>
       </div>
     </div>
     <div class="col-sm-3"> 
