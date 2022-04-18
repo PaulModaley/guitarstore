@@ -20,17 +20,26 @@ def wishlist(request):
 class ShowWishlist(View):
 
     def get(self, request):
+        _wishlists = []
         wishlists = UserWishlist.objects.filter(wishlist_owner=request.user.id).all()
-        wishlist_products = WishlistProduct.objects.filter(wishlist=wishlists).all()
+        for wishlist in wishlists:
+            wishlist_products = WishlistProduct.objects.filter(
+                wishlist=wishlist.id
+            ).all()
+            _wishlists.append({
+                "wishlist_name": wishlist.wishlist_name,
+                "wishlist_owner": wishlist.wishlist_owner,
+                "products": wishlist_products
+            })
         context = {
-            'wishlists': wishlists
+            'wishlists': _wishlists
         }
         
         return render(request, 'wishlist.html', context)
 
 
-def AddtoWishlist(request, product_id):
-    
+def add_to_wishlist(request, product_id):
+    print("I am here")
     if request.method == "POST":
         print(request.POST)
         #Handle data

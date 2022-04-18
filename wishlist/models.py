@@ -11,3 +11,4 @@ class UserWishlist(models.Model):
 class WishlistProduct(models.Model):
     wishlist = models.ForeignKey(UserWishlist, on_delete=models.CASCADE)
     product = models.ForeignKey(Product, on_delete=models.CASCADE)
+    quantity = models.IntegerField(default=0)
