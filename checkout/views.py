@@ -57,21 +57,17 @@ def checkout(request):
                         "Please call us for assistance!")
                     )
                     order.delete()
-                    print("I am here 1")
                     return redirect(reverse('view_cart'))
 
             request.session['save_info'] = 'save-info' in request.POST
-            print("I am here 2")
             return redirect(reverse('checkout_success', args=[order.order_number]))
         else:
             messages.error(request, 'There was an error with your form. \
                 Please double check your information.')
     else:
-        print("I am not in the post section")
         cart = request.session.get('cart', {})
         if not cart:
             messages.error(request, "There's nothing in your cart at the moment")
-            print("I am here 3")
             return redirect(reverse('products'))
 
         current_cart = cart_contents(request)
@@ -95,7 +91,6 @@ def checkout(request):
         'stripe_public_key': stripe_public_key,
         'client_secret': intent.client_secret,
     }
-    print("I am here 4")
     return render(request, template, context)
 
 
