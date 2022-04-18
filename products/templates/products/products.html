@@ -1,27 +1,31 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div style="margin-top: 150px;"></div>
+<div style="margin-top: 100px;"></div>
 
+          
 
-<div class="my-5">
-    
+    <div class="col-12 col-md-6 my-auto d-flex justify-content-center justify-content-md-end" style="float: right;">
+        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Sort Products
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="{% url 'products' %}?sort=price&direction=asc">By price</a>
+        <a class="dropdown-item" href="{% url 'products' %}?sort=rating&direction=asc">By rating</a>
+        </div>
+    </div>
+</div>
+</div>
 
-    <h1 style="text-align: center;">All Products</h1>
-
-            <div class="col-3">
-                <div class="row">
-                    <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Sort Products
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="{% url 'products' %}?sort=price&direction=asc">By price</a>
-                        <a class="dropdown-item" href="{% url 'products' %}?sort=rating&direction=asc">By rating</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<div class="col-12 col-md-6 order-md-first">
+    <p class="mt-3 text-center text-md-left">
+        {% if search_term or current_categories or current_sorting != 'None_None' %}
+            <span class="small"><a href="{% url 'products' %}">Products Home</a> | </span>
+        {% endif %}
+        {{ products|length }} Products{% if search_term %} found for <strong>"{{ search_term }}"</strong>{% endif %}
+    </p>
+</div>
+            
 
 <div class="container-fluid center">
 
