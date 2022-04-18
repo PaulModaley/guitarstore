@@ -46,10 +46,14 @@ def all_products(request):
     page_number = request.GET.get('page')
     products = paginator.get_page(page_number)
 
+ 
+    current_sorting = f'{sort}_{direction}'
+
     context = {
         'products': products,
-        'search': query,
-        
+        'search_term': query,
+        'current_categories': categorys,
+        'current_sorting': current_sorting,
     }
     return render(request, 'products/products.html', context)
 
