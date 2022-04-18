@@ -9,8 +9,22 @@
 
     <h1 style="text-align: center;">All Products</h1>
 
+            <div class="col-3">
+                <div class="row">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Sort Products
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="{% url 'products' %}?sort=price&direction=asc">By price</a>
+                        <a class="dropdown-item" href="{% url 'products' %}?sort=rating&direction=asc">By rating</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
 <div class="container-fluid center">
+
     <div class="row products">
        
         {% for product in products %}
