@@ -706,3 +706,17 @@ Hide search bar in mobile view */
         margin-top: 300px;
     }
 }
+
+/* hero image on larger screens */
+@media (min-width: 1500px) {
+    .display-4 {
+        margin-top: 130px;
+        size: 180vh;
+        }
+    }
+
+@media (min-width: 1080px) {
+        #hero-btn {
+            margin-top: 60px;
+            }
+        }
