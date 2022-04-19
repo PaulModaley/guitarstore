@@ -715,8 +715,9 @@ Hide search bar in mobile view */
         }
     }
 
-@media (min-width: 1080px) {
+@media (min-width: 1500px) {
         #hero-btn {
             margin-top: 60px;
             }
         }
+
