@@ -15,7 +15,7 @@
 
 {% block content %}
     <div class="overlay"></div>
-    <div class="container">
+    <div class="container text-center">
         <div class="row">
             <div class="col">
                 <hr>
@@ -25,36 +25,37 @@
             </div>
         </div>
 
-        <div class="row">
+        <div class="row justify-content-center">
             <div class="col-12 col-lg-7">
                 <div class="order-confirmation-wrapper p-2 border">
                     <div class="row">
                         <div class="col">
-                            <small class="text-muted">Order Info:</small>
+                            
                         </div>
                     </div>
 
                     <div class="row">
-                        <div class="col-12 col-md-4">
-                            <p class="mb-0 text-black font-weight-bold">Order Number</p>
+                        <div class="col-12 col-6">
+                            <p class="mb-0 text-black font-weight-bold">Order Number:</p> <span>{{ order.order_number }}</span> 
                         </div>
-                        <div class="col-12 col-md-8 text-md-right">
-                            <p class="mb-0">{{ order.order_number }}</p>
+                        <div class="col-12 col-md-8">
+                            
                         </div>
                     </div>
 
                     <div class="row">
-                        <div class="col-12 col-md-4">
-                            <p class="mb-0 text-black font-weight-bold">Order Date</p>
+                        <div class="col-12 col-6">
+                            <p class="mb-0 text-black font-weight-bold">Order Date</p> <span>{{ order.date }}</span>
                         </div>
                         <div class="col-12 col-md-8 text-md-right">
-                            <p class="mb-0">{{ order.date }}</p>
+                            
                         </div>
                     </div>
+                    <hr>
 
                     <div class="row">
                         <div class="col">
-                            <small class="text-muted">Order Details:</small>
+                            <small class="text-muted">Item(s):</small>
                         </div>
                     </div>
 
@@ -190,13 +191,13 @@
                 </div>
             </div>
         </div>
-        <div class="row">
-			<div class="col-12 col-lg-7 text-right">
-				<a href="{% url 'products' %}?category=new_arrivals,deals,clearance" class="btn btn-black rounded-0 my-2">
+        <div class="row justify-content-center">
+			<div class="col-12 col-lg-7">
+				<a href="{% url 'products' %}" class="btn btn-black rounded-0 my-2">
 					<span class="icon mr-2">
 						<i class="fas fa-gifts"></i>
 					</span>
-					<span class="text-uppercase">Now check out the latest deals!</span>
+					<span class="text-uppercase">Continue Shopping</span>
 				</a>
 			</div>
 		</div>
