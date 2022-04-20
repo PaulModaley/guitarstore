@@ -6,6 +6,8 @@ from .forms import OrderForm
 from .models import Order, OrderLineItem
 from products.models import Product
 from cart.contexts import cart_contents
+from django.views.decorators.http import require_POST
+from django.views.decorators.csrf import csrf_exempt
 
 import stripe
 
