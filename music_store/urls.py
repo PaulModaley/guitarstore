@@ -22,7 +22,6 @@ from products import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('accounts/', include('allauth.urls')),
-    path('accounts/profile/', views.profile),
     path('products/', include('products.urls')),
     path('', include('home.urls')),
     path('cart/', include('cart.urls')),
