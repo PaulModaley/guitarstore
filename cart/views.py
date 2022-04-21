@@ -21,8 +21,10 @@ def add_to_cart(request, item_id):
 
     if item_id in list(cart.keys()):
         cart[item_id] += quantity
+        messages.success(request, f'Updated {product.name} quantity to {cart[item_id]}')
     else:
         cart[item_id] = quantity
+        messages.success(request, f'Added {product.name} to your bag')
 
     request.session['cart'] = cart
     return redirect(redirect_url)
