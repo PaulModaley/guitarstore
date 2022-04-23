@@ -19,7 +19,7 @@
   
   <div class="col-6 hero-col">
   <p class="lead">
-    <a class="btn btn-lg" id="hero-btn" href="/products/" role="button">Find Your Instrument</a>
+    <a class="btn btn-lg" id="hero-btn" href="{% url 'products' %}" role="button">Find Your Instrument</a>
   </p>
   </div>
 
@@ -29,7 +29,7 @@
     
     <div class="hero-col-mob2">
     <p class="lead">
-      <a class="btn btn-lg" id="hero-btn-mob" href="/products/" role="button">Find Your Instrument</a>
+      <a class="btn btn-lg" id="hero-btn-mob" href="{% url 'products' %}" role="button">Find Your Instrument</a>
     </p>
     </div>
   
@@ -44,8 +44,8 @@
     <div class="col-sm-3">
       <div class="panel panel-primary">
         <div class="panel-heading"></div>
-        <div class="panel-body"><a href="/products/"><img src="/media/all_products_image.png" class="img-responsive" style="width:100%;" alt="Image"></a></div>
-        <div class="panel-footer text-center"><a href="/products/" id="panel-footer-text"><h1 id="panel-footer" style="color: #711F31;">All Products</h1></a></div>
+        <div class="panel-body"><a href="{% url 'products' %}"><img src="/media/all_products_image.png" class="img-responsive" style="width:100%;" alt="Image"></a></div>
+        <div class="panel-footer text-center"><a href="{% url 'products' %}" id="panel-footer-text"><h1 id="panel-footer" style="color: #711F31;">All Products</h1></a></div>
       </div>
     </div>
     <div class="col-sm-3"> 
