@@ -295,8 +295,12 @@ body {
 /* Product details page */
 
 .fa-star {
-    color:#711F31;
+    color:#E0AF3A;
 } 
+
+.fa-tag {
+    color:#711F31;
+}
 
 .text-muted {
      color:#711F31;
