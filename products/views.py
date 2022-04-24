@@ -3,9 +3,15 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
+from django.db.models import Avg
 
+from reviews.models import Review
+from reviews.forms import ReviewForm
 from .models import Product, Category
 from .forms import ProductForm
+
+from profiles.models import UserProfile
+from wishlist.models import WishList
 
 # Create your views here.
 
@@ -61,15 +67,61 @@ def all_products(request):
 
 def product_detail(request, product_id):
     """ A view to show individual product details """
-
     product = get_object_or_404(Product, pk=product_id)
+    reviews = Review.objects.all().filter(product=product)
+    avg_rating = reviews.aggregate(Avg('rating'))['rating__avg']
+    if avg_rating is not None:
+        # round to the nearest 0.5 value
+        avg_rating = round(avg_rating * 2) / 2
 
-    context = {
-        'product': product,
-    }
+    if not request.user.is_authenticated:
+        template = 'products/product_detail.html'
+        context = {
+            'product': product,
+            'reviews': reviews,
+            'avg_rating': avg_rating,
+        }
+        return render(request, template, context)
 
-    return render(request, 'products/product_detail.html', context)
+    else:
+        user_profile = get_object_or_404(UserProfile, user=request.user)
+        # find a match to the product and user
+        wishlist = WishList.objects.filter(
+                   user_profile=user_profile, product=product_id)
 
+        if request.method == 'POST':
+            form = ReviewForm(request.POST)
+            if form.is_valid():
+                reviews.create(
+                    user_profile=user_profile,
+                    product=product,
+                    rating=request.POST.get('rating'),
+                    review=request.POST.get('review'))
+                # re-filter reviews including the newest, and grab updated
+                # aggregate rating
+                reviews = Review.objects.all().filter(product=product)
+                avg_rating = reviews.aggregate(Avg('rating'))['rating__avg']
+                product.rating = avg_rating
+                product.save()
+                messages.info(request, 'Successfully added review.')
+                return redirect(reverse('product_detail', args=[product_id]))
+            else:
+                messages.error(request, 'Failed to add review. \
+                        Please check the form is valid and try again.')
+        else:
+            form = ReviewForm()
+
+        template = 'products/product_detail.html'
+        context = {
+            'form': form,
+            'product': product,
+            'user_profile': user_profile,
+            'reviews': reviews,
+            'avg_rating': avg_rating,
+            'wishlist': wishlist,
+        }
+
+        return render(request, template, context)
 
 @login_required
 def add_product(request):
