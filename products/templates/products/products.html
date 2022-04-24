@@ -2,7 +2,9 @@
 
 {% block content %}
 <div style="margin-top: 100px;"></div>
-
+<div class="col-12 justify-content-center">
+    <h2 class="justify-content-center">Products</h1>
+</div>
 
 
 <div class="col-12 col-md-6 my-auto d-flex justify-content-center justify-content-md-end" style="float: right;">
@@ -11,8 +13,12 @@
         Sort Products
     </button>
     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <a class="dropdown-item" href="{% url 'products' %}?sort=price&direction=asc">By price</a>
-        <a class="dropdown-item" href="{% url 'products' %}?sort=rating&direction=asc">By rating</a>
+        <a class="dropdown-item" href="{% url 'products' %}?sort=price&direction=asc" style="color: #711F31;">By price (low - high)</a>
+        <a class="dropdown-item" href="{% url 'products' %}?sort=rating&direction=asc" style="color: #711F31;">By rating (low - high)</a>
+        <a class="dropdown-item" href="{% url 'products' %}?sort=price&direction=desc" style="color: #711F31;">By price (high - low)</a>
+        <a class="dropdown-item" href="{% url 'products' %}?sort=rating&direction=desc"style="color: #711F31;">By rating (high - low)</a>
+
+
     </div>
 </div>
 </div>
@@ -23,7 +29,7 @@
         {% if search_term or current_categories or current_sorting != 'None_None' %}
         <span class="small"><a href="{% url 'products' %}">Products Home</a> | </span>
         {% endif %}
-        {{ products|length }} Products{% if search_term %} found for <strong>"{{ search_term }}"</strong>{% endif %}
+        {{ products|length }} Items{% if search_term %} found for <strong>"{{ search_term }}"</strong>{% endif %}
     </p>
 </div>
 
