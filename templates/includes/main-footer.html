@@ -13,11 +13,14 @@
                                     <div class="card p-3 p-md-4" style="background-color: #711F31;"> <span><i
                                                 class="fa fa-envelope-open-o fa-3x" aria-hidden="true"></i></span>
                                         <h5 class="my-3"> Subscribe to the newsletter </h5>
+                                        <form method="POST" action="">
+                                            {% csrf_token %}
                                         <div class="row d-flex my-2 pr-2 pr-md-5 div1">
                                             <div class="col-9"> <input type="email" class="form-control py-3" id="inp1"
-                                                    placeholder="Enter email address"> </div>
-                                            <div class="col-3 px-0"> <button class="text-white px-4 py-2" id="btn2" style="border-color: #E0AF3A; border-radius: 13px;"> Sign Up
+                                                    placeholder="Enter email address"> {{ email }}  </div>
+                                            <div class="col-3 px-0"> <button type="submit" a href="" class="text-white px-4 py-2" id="btn2" style="border-color: #E0AF3A; border-radius: 13px;"> Sign Up
                                                 </button> </div>
+                                        </form>
                                         </div>
                                     </div>
                                 </div>

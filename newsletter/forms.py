@@ -1,13 +1,11 @@
 from django import forms
 from django.db import models
 from .models import NewsletterSubscribe
+from django import ModelForm
 
 class NewsletterSubscribe(forms.ModelForm):
     class Meta:
-        model = Contact
+        model = Subscription
         fields = [ 
             'email',
         ]
-        widgets = {
-            'email': EmailInput(attrs={'class': 'form-control'}),
-        }
