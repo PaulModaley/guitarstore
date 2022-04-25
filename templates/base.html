@@ -62,25 +62,7 @@
       <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
         <!-- Section: Social media header buttons-->
 
-        <!-- Facebook -->
-        <a class="btn btn-outline-light btn-floating m-1" id="btn2" href="https://www.facebook.com" role="button"
-          target="_blank"><i class="fab fa-facebook-f"></i></a>
 
-        <!-- Twitter -->
-        <a class="btn btn-outline-light btn-floating m-1" id="btn2" href="https://www.twitter.com" target="_blank"
-          role="button"><i class="fab fa-twitter"></i></a>
-
-        <!-- Google -->
-        <a class="btn btn-outline-light btn-floating m-1" id="btn2" href="https://www.google.com" target="_blank"
-          role="button"><i class="fab fa-google"></i></a>
-
-        <!-- Instagram -->
-        <a class="btn btn-outline-light btn-floating m-1" id="btn2" href="https://www.instagram.com" target="_blank"
-          role="button"><i class="fab fa-instagram"></i></a>
-
-        <!-- Linkedin -->
-        <a class="btn btn-outline-light btn-floating m-1" id="btn2" href="https://wwww.linkedin.com" target="_blank"
-          role="button"><i class="fab fa-linkedin-in"></i></a>
       </div>
       <!-- heading -->
       <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg">
@@ -243,6 +225,33 @@
 
   {% block content %}
   {% endblock %}
+
+          <!-- Footer -->
+          <footer class="container-fluid pt-2" id="footer-main">
+            {% include 'includes/mobile-footer.html' %}
+            {% include 'includes/main-footer.html' %}
+            <!-- Copyright -->
+            <div class="row pb-2 pb-lg-3 mt-0 pt-1 pt-lg-2 text-center text-lg-left">
+                <div class="col">
+                    <div class="row">
+                        <div class="col cream small ml-4">
+                            <span>
+                                &copy; Copyright<span id=copyright></span> | Legato Music | 
+                            </span>
+                            <span class="d-none d-md-inline-block">Developed by: Paul Modaley </span>   
+                            <a href="https://github.com/CarlaBuongiorno/la_fraschetta" style="color: #ffff;" target="_blank" rel="noopener">
+                                <i class="fab fa-github fa-lg ml-1" aria-hidden="true"></i>
+                                <span class="sr-only">GitHub</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/carlabuongiorno/" style="color: #ffff;" target="_blank" rel="noopener">
+                                <i class="fab fa-linkedin fa-lg ml-1" aria-hidden="true"></i>
+                                <span class="sr-only">linkedin</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
   {% block postloadjs %}
   <script type="text/javascript">

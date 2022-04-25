@@ -284,7 +284,9 @@ body {
 
 
 /* FOOTER */
-
+#footer-main {
+    background-color: #711F31;
+}
 
 /* product page */
 #product-price {
@@ -710,6 +712,13 @@ button:focus {
   }
 } 
 
+@media (min-width: 1900px) { 
+    .jumbotron {
+      max-height: 60vh;
+    }
+  } 
+  
+
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
     .fixed-top {
@@ -737,12 +746,12 @@ button:focus {
     .my-0 {
         font-size: smaller;
         }
-    }
+}
 
 /* for shopping cart page */
 @media (max-width: 526px) {
 .my-6 {
-    margin-top: 130px;
+    margin-top: 50px;
     }
 }
 
@@ -833,7 +842,7 @@ Hide search bar in mobile view */
         width: 100%;
         margin: auto;
         text-align: center;
-        margin-top: 300px;
+        margin-top: 200px;
     }
 }
 
@@ -843,11 +852,11 @@ Hide search bar in mobile view */
         margin-top: 130px;
         size: 180vh;
         }
-    }
+}
 
 @media (min-width: 1500px) {
-        #hero-btn {
-            margin-top: 60px;
-            }
+    #hero-btn {
+        margin-top: 60px;
         }
+}
 
