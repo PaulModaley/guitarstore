@@ -59,8 +59,8 @@ body {
     margin-left: -15px;
 }
 
-.my-0 {
-    font-size: 12px;
+#head-text {
+    font-size: 16px;
 }
 
 /* end nav bar styling */
@@ -88,7 +88,7 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 80vh;
+    height: 75vh;
  }
 
 
@@ -227,7 +227,7 @@ body {
 
 .banner-txt {
     text-align: center;
-    font-size: medium;
+    font-size: x-large;
     color:#ffff; 
     margin-top: -35px;
 }
