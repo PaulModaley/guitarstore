@@ -18,6 +18,7 @@ from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 from products import views
+from newsletter import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -28,4 +29,5 @@ urlpatterns = [
     path('wishlist/', include('wishlist.urls')),
     path('checkout/', include('checkout.urls')),
     path('accounts/profile/', include('profiles.urls')),
+    path('newsletter/', include('newsletter.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
