@@ -43,13 +43,13 @@ def add_subscriber(request):
                 to newsletter')
         return HttpResponseRedirect(next_page)
 
-    if "accepted_privacy_policy" in request.POST:
-        accepted_privacy_policy = True
-    else:
-        messages.error(
-                request,
-                'Please mark the option that you accept Privacy Policy')
-        return HttpResponseRedirect(next_page)
+    # if "accepted_privacy_policy" in request.POST:
+    #     accepted_privacy_policy = True
+    # else:
+    #     messages.error(
+    #             request,
+    #             'Please mark the option that you accept Privacy Policy')
+    #     return HttpResponseRedirect(next_page)
 
     if Subscriber.objects.filter(email=email).filter(subscribed=True).exists():
         # email already in database and subscribed

@@ -8,6 +8,14 @@ body {
     color: #711F31;
     font-family: 'Comfortaa';
     background-color: #ffff;
+    height: 100vh;
+}
+
+/* Credit -> https://css-tricks.com/a-clever-sticky-footer-technique/ */
+body > footer {
+    position: sticky;
+    top: 100vh;
+    clear: right;
 }
 
 /* Nav bar and header styling */
@@ -286,6 +294,7 @@ body {
 /* FOOTER */
 #footer-main {
     background-color: #711F31;
+    color: #ffff;
 }
 
 /* product page */

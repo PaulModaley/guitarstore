@@ -226,6 +226,14 @@
   {% block content %}
   {% endblock %}
 
+
+
+  {% block postloadjs %}
+  <script type="text/javascript">
+    $('.toast').toast('show');
+  </script>
+  {% endblock %}
+
           <!-- Footer -->
           <footer class="container-fluid pt-2" id="footer-main">
             {% include 'includes/mobile-footer.html' %}
@@ -239,7 +247,7 @@
                                 &copy; Copyright<span id=copyright></span> | Legato Music | 
                             </span>
                             <span class="d-none d-md-inline-block">Developed by: Paul Modaley </span>   
-                            <a href="https://github.com/" style="color: #ffff;" target="_blank" rel="noopener">
+                            <a href="https://github.com/PaulModaley/musicstore" style="color: #ffff;" target="_blank" rel="noopener">
                                 <i class="fab fa-github fa-lg ml-1" aria-hidden="true"></i>
                                 <span class="sr-only">GitHub</span>
                             </a>
@@ -252,14 +260,6 @@
                 </div>
             </div>
         </footer>
-
-  {% block postloadjs %}
-  <script type="text/javascript">
-    $('.toast').toast('show');
-  </script>
-  {% endblock %}
-
-
 
 </body>
 
