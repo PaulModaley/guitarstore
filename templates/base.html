@@ -103,14 +103,6 @@
             </a>
           </li>
           <li class="list-inline-item" id="icons">
-            <a href="{% url 'contact' %}" id="user-options">
-              <div class="text-center">
-                <div class="icons"><i class="fas-regular fa-message"></i></div>
-                <p class="my-0" id="head-text">Contact Us</p>
-              </div>
-            </a>
-          </li>
-          <li class="list-inline-item" id="icons">
             <a class="{% if grand_total %} {% else %}text-black{% endif %} nav-link" href="/cart" id="user-options">
               <div class="text-center">
                 <div class="icons"><i class="fas fa-shopping-cart"></i></div>
@@ -121,6 +113,14 @@
                   £0.00
                   {% endif %}
                 </p>
+              </div>
+            </a>
+          </li>
+          <li class="list-inline-item" id="icons">
+            <a class="nav-link" href="{% url 'contact' %}" id="user-options">
+              <div class="text-center">
+                <div class="icons"><i class="fas fa-envelope"></i></div>
+                <p class="my-0" id="head-text">Contact Us</p>
               </div>
             </a>
           </li>
