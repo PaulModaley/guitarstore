@@ -48,13 +48,13 @@
                                         {% endif %}
                                         </td>
                                         <td class="py-3 w-50 pl-md-4 pr-lg-5">
-                                            <p class="my-0  mb-4"><strong>{{ product.product.name }}</strong></p>
+                                            <p class="my-0 mb-4 product"><strong>{{ product.product.name }}</strong></p>
                                             <div>
                                                 <p class="my-0 mr-lg-5">{{ product.product.description }}</p>
                                             </div>
                                         </td>
                                         <td class="py-3">
-                                            <p class="my-0 "><strong>£{{ product.product.price }}</strong></p>
+                                            <p class="my-0 product"><strong>£{{ product.product.price }}</strong></p>
                                         </td>
                                         <td class="py-3">
                                             <a href="{% url 'remove_from_wishlist' product.product.id %}"><i class="fas fa-trash-alt" style="color: #711F31;"></i></a>

@@ -588,6 +588,16 @@ button:focus {
         padding-left: 20px
     }
 }
+
+/* Wishlist */
+.product {
+    color: #711F31;
+}
+
+tr {
+    color: #711F31;
+}
+
 /* ------------------------------- bootstrap toasts */
 
 .message-container {

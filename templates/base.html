@@ -98,13 +98,7 @@
             <a class="{% if grand_total %} {% else %}text-black{% endif %} nav-link" href="{% url 'wishlist' %}" id="user-options">
               <div class="text-center">
                 <div class="icons"><i class="fas fa-heart fa-lg"></i></div>
-                <p class="my-0">
-                  {% if wish %}
-                  {{ wish|floatformat:2 }}
-                  {% else %}
-                  Wishlist
-                  {% endif %}
-                </p>
+                <p class="my-0"> Wishlist</p>
               </div>
             </a>
           </li>
