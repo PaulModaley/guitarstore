@@ -68,7 +68,7 @@ body > footer {
 }
 
 #head-text {
-    font-size: 16px;
+    font-size: 13px;
 }
 
 /* end nav bar styling */
@@ -849,7 +849,6 @@ Hide search bar in mobile view */
 
 @media (max-width: 764px) {
 .card-img-top {
-    transform: rotate(90deg);
     margin: auto;
     width: 100%;
     align-content: center;
