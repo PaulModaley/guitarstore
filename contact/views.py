@@ -7,6 +7,8 @@ from .models import Contact
 
 from django.shortcuts import render
 
+
+
 def contact(request):
 	context ={}
 

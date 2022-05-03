@@ -96,12 +96,12 @@ body > footer {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 75vh;
+    height: 65vh;
  }
 
 
 .display-4 {
-    padding-top: 50px;
+    padding-top: 10px;
     font-size: 80px;
     margin-top: 30px;
     color: white;
