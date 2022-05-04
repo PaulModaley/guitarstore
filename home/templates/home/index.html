@@ -90,7 +90,7 @@
   </div>
 </div><br>
 
-<form action="{% url 'newsletter' %}" class="mt-3" method="POST" id="contact-form">
+<form action="" class="mt-3" method="POST" id="contact-form">
   {% csrf_token %}
   {{ newsletter }}
   <button type="submit" class="btn float-right">Send Message</button>
