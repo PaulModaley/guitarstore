@@ -1,6 +1,6 @@
 # import form class from django
 from django import forms
-from .models import Contact
+from .models import Newsletter
 
 # create a ModelForm
 class Add_Subscriber(forms.ModelForm):
