@@ -7,9 +7,15 @@
         <div class="single">
             <h2>Subscribe to our Newsletter</h2>
         <div class="input-group">
-             <input type="email" class="form-control" placeholder="Enter your email">
-             <span class="input-group-btn">
-             <button class="btn btn-theme" type="submit">Subscribe</button>
+            <form action="" method="POST">
+                {% csrf_token %}
+
+                {{ form.as_p }}
+                <input type="email" class="form-control" placeholder="Enter your email">
+                <span class="input-group-btn">
+                <input type="submit" value="submit" class="form-control">
+                <!-- <button class="btn btn-theme" type="submit">Subscribe</button> -->
+            </form>
              </span>
               </div>
         </div>
