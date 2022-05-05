@@ -5,9 +5,18 @@ from django.http import HttpResponseRedirect
 
 # Create your views here.
 def add_subscriber(request):
-    submitted = False
-    if request.method == "POST"
-    form = Add_Subscriber(request.POST)
-    if form.is_valid():
-        form.save()
-    return HttpResponseRedirect('/')
+    if request.method == "POST":
+        
+        form = Add_Subscriber(request.POST)
+        if form.is_valid():
+            form.save()
+        return HttpResponseRedirect('add_subscriber?submitted=True')
+    else:
+        form = Add_Subscriber
+        if 'submitted' in request.GET:
+            submitted = True
+            print('hello')
+
+    return render(request, '/add_subscriber', {'form': form, 'submitted': submitted})  
+
+

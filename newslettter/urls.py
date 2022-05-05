@@ -3,5 +3,4 @@ from . import views
 
 
 urlpatterns = [
-     path('', views.Newsletter, name='contact'),
-]
+     path('', views.add_subscriber, name='add_subscriber'),
