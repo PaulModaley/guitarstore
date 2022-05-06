@@ -44,10 +44,10 @@
                     Studio
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Home Recording</a>
-                    <a class="dropdown-item" href="#">Microphones</a>
-                    <a class="dropdown-item" href="#">Mixing Desks</a>
-                    <a class="dropdown-item" href="#">Speakers</a>
+                    <a class="dropdown-item" href="{% url 'products' %}?category=Home Recording">Home Recording</a>
+                    <a class="dropdown-item" href="{% url 'products' %}?category=Microphones">Microphones</a>
+                    <a class="dropdown-item" href="{% url 'products' %}?category=Mixing Desks">Mixing Desks</a>
+                    <a class="dropdown-item" href="{% url 'products' %}?category=Speakers">Speakers</a>
                 </div>
             </li>
         </ul>
