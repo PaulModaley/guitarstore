@@ -80,10 +80,12 @@
     <div class="col-sm-3">
       <div class="panel panel-success">
         <div class="panel-heading text-center"></div>
-        <div class="panel-body"><img src="/media/audio_product_image.png" class="img-responsive" style="width:100%"
-            alt="Image"></div>
-        <div class="panel-footer text-center">
-          <h1 id="panel-footer">Studio</h1>
+        <div class="panel-body"><a href="{% url 'products' %}?category=Home Recording,Microphones,Software"><img src="/media/audio_product_image.png" class="img-responsive" style="width:100%"
+            alt="Image"></a></div>
+            <div class="panel-footer text-center"><a href="{% url 'products' %}?category=Home Recording,Microphones,Software"
+              id="panel-footer-text">
+              <h1 id="panel-footer" style="color: #711F31;">Studio</h1>
+            </a></div>
         </div>
       </div>
     </div>
