@@ -96,7 +96,7 @@ body > footer {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 65vh;
+    /* height: 70vh; */
  }
 
 
@@ -838,7 +838,6 @@ Hide search bar in mobile view */
 /* hero image on smaller screens */
 @media (max-width: 912px) {
     .display-4 {
-        margin-top: 30px;
         font-size: 25px;
         text-align: center;
         }
@@ -889,6 +888,7 @@ Hide search bar in mobile view */
 .display-4-mob {
     color: white;
     font-size: 200px;
+    margin-top: 20px;
     }
 }
 
