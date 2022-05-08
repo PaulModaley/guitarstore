@@ -248,10 +248,12 @@ Product Details
                         </div>
                     </div>
                     <div class="col-12 col-sm-6 col-lg-4">
-                        <button type="submit" id="cart" class="btn two">Add to Cart <i class="fas fa-shopping-basket"></i></button>
+                        <button type="submit" id="cart" class="btn two">Add to Cart</button>
                     </div>
                 </div>
 
+         
+            </form>
             <div class="row">
                 <div class="col">
                     <a href="{% url 'products' %}" class="btn my-2">
@@ -263,7 +265,6 @@ Product Details
                 </div>
                 <input type="hidden" name="redirect_url" value="{{ request.path }}">
             </div>
-            </form>
         </div>
     </div>
     <!-- Reviews -->
