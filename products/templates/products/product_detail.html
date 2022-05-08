@@ -212,9 +212,10 @@ Product Details
                     <p class="muted">{{ product.description }}</p>
                 </div>
             </div>
+            <div class="row"></div>
             <form class="form" action="{% url 'add_to_cart' product.id %}" method="POST">
                 {% csrf_token %}
-
+                
                     <div class="col-12">
                         <p class="mt-3"><strong>Quantity:</strong></p>
                         <div class="form-group w-50">
