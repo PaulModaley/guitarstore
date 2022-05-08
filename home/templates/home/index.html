@@ -94,7 +94,21 @@
   </div>
 </div>
 
-
+<form class="home-newsletter" method="post" action="/newsletter/">
+  {% csrf_token %}
+  <div>
+    <h2 style="color: white;">Subscribe to Our Newsletter</h2>
+  </div>
+  <div>
+    <input name="email" type="email" placeholder="Enter your email"/>
+  </div> 
+  <div class="row">
+    <br>
+  </div>
+  <div class="container d-flex justify-content-center">
+    <input class="submit" type="submit" value='Sign Up'></input>
+  </div>
+</form>
  
 </div>
 

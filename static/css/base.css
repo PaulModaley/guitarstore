@@ -294,10 +294,11 @@ body > footer {
 .home-newsletter {
     padding: 40px 0;
     background: #711F31;
+    width: 100%;
     }
     
-    .home-newsletter .single {
-    max-width: 650px;
+    .home-newsletter {
+ 
     margin: 0 auto;
     text-align: center;
     position: relative;
@@ -306,7 +307,7 @@ body > footer {
     font-size: 22px;
     color: white;
     text-transform: uppercase;
-    margin-bottom: 20px; }
+    margin-bottom: 4px; }
     .home-newsletter .single .form-control {
     height: 50px;
     background: #ffff;
@@ -321,6 +322,17 @@ body > footer {
     background: #E0AF3A;
     color: #fff;
     }
+    .home-newsletter label {
+    min-height: 50px; 
+    border-radius: 0 20px 20px 0;
+    color: #fff;
+    }
+    .home-newsletter input {
+    width: 20%;
+    }
+    .submit {
+    background-color: #E0AF3A;
+}
 
 /* FOOTER */
 #footer-main {
