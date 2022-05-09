@@ -80,45 +80,44 @@
     <div class="col-sm-3">
       <div class="panel panel-success">
         <div class="panel-heading text-center"></div>
-        <div class="panel-body"><a href="{% url 'products' %}?category=Home Recording,Microphones,Software"><img src="/media/audio_product_image.png" class="img-responsive" style="width:100%"
-            alt="Image"></a></div>
-            <div class="panel-footer text-center"><a href="{% url 'products' %}?category=Home Recording,Microphones,Software"
-              id="panel-footer-text">
-              <h1 id="panel-footer" style="color: #711F31;">Studio</h1>
-            </a></div>
-        </div>
+        <div class="panel-body"><a href="{% url 'products' %}?category=Home Recording,Microphones,Software"><img
+              src="/media/audio_product_image.png" class="img-responsive" style="width:100%" alt="Image"></a></div>
+        <div class="panel-footer text-center"><a
+            href="{% url 'products' %}?category=Home Recording,Microphones,Software" id="panel-footer-text">
+            <h1 id="panel-footer" style="color: #711F31;">Studio</h1>
+          </a></div>
       </div>
     </div>
   </div>
+</div>
 </div><br>
 
-    </div>
-  </div>
+</div>
+</div>
 </div>
 
-<form class="home-newsletter" method="post" action="/newsletter/">
-  {% csrf_token %}
-  <div>
-    <h2 style="color: white;">Subscribe to Our Newsletter</h2>
-    <p style="color: #E0AF3A;">Receive the latest product news, special offers and deals.</p>
-  </div>
-  <div>
-    <input name="email" id="email" type="email" placeholder="Enter your email"/>
- 
-      <input class="submit" type="submit" value='Sign Up'></input>
-    </div>
-  </div> 
 
-</form>
- 
+
 </div>
 
 
 
 <footer class="text-center text-white">
-  <!-- Grid container -->
-  <div class="container">
-  </div>
+  <form class="home-newsletter" method="post" action="/newsletter/">
+    {% csrf_token %}
+    <div>
+      <h2 style="color: white;">Subscribe to Our Newsletter</h2>
+      <p style="color: #E0AF3A;">Receive the latest product news, special offers and deals.</p>
+    </div>
+    <div>
+      <input name="email" id="email" type="email" placeholder="Enter your email" />
+
+      <input class="submit" type="submit" value='Sign Up'></input>
+    </div>
+    </div>
+
+  </form>
+
 
 
   </div>

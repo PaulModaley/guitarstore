@@ -68,7 +68,7 @@ body > footer {
 }
 
 #head-text {
-    font-size: 13px;
+    font-size: 20px;
 }
 
 /* end nav bar styling */
@@ -96,6 +96,7 @@ body > footer {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    height: 70vh;
  }
 
 
@@ -271,9 +272,9 @@ body > footer {
       }
       
       .panel-body:hover {
-        transform: scale(1.09); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+        transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
       }
-}
+
 
 #panel-footer-text {
     text-decoration: none;
@@ -294,14 +295,12 @@ body > footer {
     padding: 40px 0;
     background: #711F31;
     width: 100%;
-    }
-    
-    .home-newsletter {
- 
     margin: 0 auto;
     text-align: center;
     position: relative;
-    z-index: 2; }
+    z-index: 2; 
+}
+
     .home-newsletter .single h2 {
     font-size: 22px;
     color: white;
@@ -908,7 +907,7 @@ Hide search bar in mobile view */
     }
 }
 
-/* hero image on larger screens */
+/* hero image and text size on larger screens 1920 x 1080 */
 @media (min-width: 1500px) {
     .display-4 {
         margin-top: 100px;
@@ -916,9 +915,38 @@ Hide search bar in mobile view */
         }
 }
 
+@media (min-width: 1920px) {
+    .display-4 {
+        margin-top: 80px;
+        size: 110vh;
+        font-size: 140px;
+    }
+}
+
 @media (min-width: 1500px) {
     #hero-btn {
         margin-top: 40px;
-        }
+    }
 }
 
+@media (min-width: 1920px) {
+    #hero-btn {
+        margin-top: 40px;
+        padding: 30px;
+        font-size: xx-large;
+    }
+}
+
+/* Make fonts bugger on larger screens */
+
+@media (min-width: 1920px) {
+    body {
+        font-size: x-large;
+    }
+}
+
+@media (min-width: 1920px) {
+    #head-text {
+        font-size: x-large;
+    }
+}
