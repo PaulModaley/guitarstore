@@ -54,12 +54,12 @@
                     {% endif %}
                     <div class="row">
                         <div class="card-body pb-0">
-                            <p class="mb-0" style="font-size: small; text-align: center;"><a
+                            <p class="mb-0" style="text-align: center;"><a
                                     href="{% url 'product_detail' product.id %}"
                                     style="text-decoration: none; color: #711F31;">{{product.name}}<br></p></a>
                         </div>
                         <div class="px-2" style="margin: auto; width: 100%;">
-                            <h4 id="product-price" style="font-size: x-small;">£{{ product.price }}</h3>
+                            <h4 id="product-price">£{{ product.price }}</h3>
                         </div>
                     </div>
 

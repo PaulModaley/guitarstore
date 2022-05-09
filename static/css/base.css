@@ -950,3 +950,13 @@ Hide search bar in mobile view */
         font-size: x-large;
     }
 }
+
+@media (min-width: 1920px) {
+body {
+    color: #711F31;
+    font-family: 'Comfortaa';
+    background-color: #ffff;
+    height: 100vh;
+    font-size: xx-large;
+    }
+}

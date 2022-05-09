@@ -38,7 +38,7 @@ Product Details
                             <i class="fas fa-heart" style="color:#711F31;"></i>
                         </a>
                         {% else %}
-                        <span class="d-none d-lg-inline-block green">Add to Wishlist: </span>
+                        <span class="d-none d-lg-inline-block">Add to Wishlist: </span>
                         <a class="wishlist_btn hvr-grow"
                             href="{% if user.is_authenticated %}{% url 'add_to_wishlist' product.id %}{% else %}{% url 'account_login' %}{% endif %}">
                             <i class="fas fa-heart" style="color:#711F31;"></i>
@@ -51,7 +51,7 @@ Product Details
                 <div class="col-12 col-sm-8 col-md-9 col-lg-8">
                     {% if avg_rating == 5 %}
                     <p>
-                        <small class="green-muted">
+                        <small class="muted">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -65,7 +65,7 @@ Product Details
                     </p>
                     {% elif avg_rating == 4.5 %}
                     <p>
-                        <small class="green-muted">
+                        <small class="muted">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -78,7 +78,7 @@ Product Details
                     </p>
                     {% elif avg_rating == 4 %}
                     <p>
-                        <small class="green-muted">
+                        <small class="muted">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -91,7 +91,7 @@ Product Details
                     </p>
                     {% elif avg_rating == 3.5 %}
                     <p>
-                        <small class="green-muted">
+                        <small class="muted">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -104,7 +104,7 @@ Product Details
                     </p>
                     {% elif avg_rating == 3 %}
                     <p>
-                        <small class="green-muted">
+                        <small class="muted">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -117,7 +117,7 @@ Product Details
                     </p>
                     {% elif avg_rating == 2.5 %}
                     <p>
-                        <small class="green-muted">
+                        <small class="muted">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star-half-alt"></i>
@@ -130,7 +130,7 @@ Product Details
                     </p>
                     {% elif avg_rating == 2 %}
                     <p>
-                        <small class="green-muted">
+                        <small class="muted">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="far fa-star"></i>
@@ -143,7 +143,7 @@ Product Details
                     </p>
                     {% elif avg_rating == 1.5 %}
                     <p>
-                        <small class="green-muted">
+                        <small class="muted">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star-half-alt"></i>
                             <i class="far fa-star"></i>
@@ -156,7 +156,7 @@ Product Details
                     </p>
                     {% elif avg_rating == 1 %}
                     <p>
-                        <small class="green-muted">
+                        <small class="muted">
                             <i class="fas fa-star"></i>
                             <i class="far fa-star"></i>
                             <i class="far fa-star"></i>
@@ -169,7 +169,7 @@ Product Details
                     </p>
                     {% else %}
                     <p>
-                        <small class="green-muted">
+                        <small class="muted">
                             No Reviews
                         </small>
                     </p>
@@ -178,26 +178,26 @@ Product Details
                 <div class="col-12 pb-3 pb-sm-0 col-sm-4 col-md-3 col-lg-3 text-sm-right pl-sm-0 site-font">
                     {% if request.user.is_superuser %}
                     <small>
-                        <a href="{% url 'edit_product' product.id %}" class="green">Edit</a> |
-                        <a href="{% url 'delete_product' product.id %}" class="red">Delete</a>
+                        <a href="{% url 'edit_product' product.id %}">Edit</a> |
+                        <a href="{% url 'delete_product' product.id %}">Delete</a>
                     </small>
                     {% endif %}
                 </div>
             </div>
             <div class="row">
-                <div class="col-12 col-lg-11 green">
+                <div class="col-12 col-lg-11">
                     <p class="lead text-left font-weight-bold">£{{ product.price }}</p>
                 </div>
             </div>
             <div class="row pb-2">
                 {% if product.category %}
                 <div class="col-lg-3 d-none d-lg-block">
-                    <p class="my-auto green">Category:</p>
+                    <p class="my-auto ">Category:</p>
                 </div>
                 <div class="col-12 col-lg-8">
                     <p class="my-auto back-to-category-link">
                         <a href="{% url 'products' %}?category={{ product.category.backend_name }}"
-                            class="green-muted my-auto">
+                            class="muted my-auto">
                             {{ product.category.friendly_name }}
                         </a>
                     </p>
@@ -206,7 +206,7 @@ Product Details
             </div>
             <div class="row">
                 <div class="col-lg-3 d-none d-lg-block">
-                    <p class="green">Description:</p>
+                    <p>Description:</p>
                 </div>
                 <div class="col-md-12 col-lg-8">
                     <p class="muted">{{ product.description }}</p>
@@ -267,20 +267,20 @@ Product Details
     <!-- Reviews -->
     <!-- Credit -> Tim Nelson for helping me understand and guiding me in rendering the reviews details -->
     <div class="row mt-0 pb-5">
-        <div class="col-10 offset-1 col-sm-8 offset-sm-2 col-md-6 offset-md-0 col-lg-5 offset-lg-1 green">
+        <div class="col-10 offset-1 col-sm-8 offset-sm-2 col-md-6 offset-md-0 col-lg-5 offset-lg-1 ">
             <h5 class="font-weight-bold ml-1">{{ reviews.count }} Reviews for {{ product.name }}</h5>
             <hr class="mb-3">
             {% for review in reviews %}
             <div class="row mb-3">
                 <div class="col-8 pr-0 pr-md-3">
                     <p class="mb-0 ml-1"><u>{{ review.user_profile.user }}</u></p>
-                    <p class="green-muted mb-1 ml-1"><small>{{ review.created_on }}</small></p>
+                    <p class="muted mb-1 ml-1"><small>{{ review.created_on }}</small></p>
                     <p class="mb-0 ml-1">{{ review.review }}</p>
                 </div>
                 <div class="col-4 px-0">
                     {% if review.rating == 5 %}
                     <p class="">
-                        <small class="green-muted">
+                        <small class="muted">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -290,7 +290,7 @@ Product Details
                     </p>
                     {% elif review.rating == 4 %}
                     <p>
-                        <small class="green-muted">
+                        <small class="muted">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -300,7 +300,7 @@ Product Details
                     </p>
                     {% elif review.rating == 3 %}
                     <p>
-                        <small class="green-muted">
+                        <small class="muted">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -310,7 +310,7 @@ Product Details
                     </p>
                     {% elif review.rating == 2 %}
                     <p>
-                        <small class="green-muted">
+                        <small class="muted">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="far fa-star"></i>
@@ -320,7 +320,7 @@ Product Details
                     </p>
                     {% elif review.rating == 1 %}
                     <p>
-                        <small class="green-muted">
+                        <small class="muted">
                             <i class="fas fa-star"></i>
                             <i class="far fa-star"></i>
                             <i class="far fa-star"></i>
@@ -330,7 +330,7 @@ Product Details
                     </p>
                     {% endif %}
                 </div>
-                <hr class="green-muted mx-3 mb-2">
+                <hr class="muted mx-3 mb-2">
             </div>
             {% endfor %}
         </div>
@@ -338,20 +338,20 @@ Product Details
         {% if user.is_authenticated %}
         <div class="col-10 offset-1 col-sm-8 offset-sm-2 col-md-6 offset-md-0 col-lg-5">
             <div class="row">
-                <div class="col green">
+                <div class="col">
                     <h5 id="add-review" class="font-weight-bold ml-1">Add your review for {{ product.name }}</h5>
                     <hr>
                 </div>
             </div>
             <div class="row">
-                <div class="col green-muted">
+                <div class="col muted">
                     <p class="ml-1">Your email address will not be shared.</p>
                 </div>
             </div>
             <form class="green ml-1" action="{% url 'product_detail' product.id %}" method="POST">
                 {% csrf_token %}
                 {{ form|crispy }}
-                <button class="btn btn-green" type="submit">Add Review</button>
+                <button class="btn" type="submit">Add Review</button>
             </form>
         </div>
         {% else %}
@@ -361,7 +361,7 @@ Product Details
         {% endif %}
     </div>
 </section>
-<div class="btt-button border-green green bg-cream">
+<div class="btt-button border">
     <a class="btt-link d-flex h-100">
         <i class="fas fa-arrow-up mx-auto my-auto"></i>
     </a>
