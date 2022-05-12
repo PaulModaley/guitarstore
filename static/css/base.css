@@ -68,7 +68,7 @@ body > footer {
 }
 
 #head-text {
-    font-size: 20px;
+    font-size: 10px;
 }
 
 /* end nav bar styling */
@@ -152,6 +152,10 @@ body > footer {
 
 .main-logo-link {
     width: fit-content;
+}
+
+.dropdown-item {
+    font-size: x-large;
 }
 
 /* button styling */
@@ -919,21 +923,20 @@ Hide search bar in mobile view */
     .display-4 {
         margin-top: 80px;
         size: 110vh;
-        font-size: 140px;
     }
 }
 
 @media (min-width: 1500px) {
     #hero-btn {
-        margin-top: 40px;
+        margin-top: 30px;
     }
 }
 
 @media (min-width: 1920px) {
     #hero-btn {
         margin-top: 40px;
-        padding: 30px;
-        font-size: xx-large;
+        padding: 20px;
+        font-size: x-large;
     }
 }
 
@@ -941,13 +944,13 @@ Hide search bar in mobile view */
 
 @media (min-width: 1920px) {
     body {
-        font-size: x-large;
+        font-size: large;
     }
 }
 
 @media (min-width: 1920px) {
     #head-text {
-        font-size: x-large;
+        font-size: large;
     }
 }
 
@@ -957,6 +960,6 @@ body {
     font-family: 'Comfortaa';
     background-color: #ffff;
     height: 100vh;
-    font-size: xx-large;
+    font-size: large;
     }
 }

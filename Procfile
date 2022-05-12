@@ -1,1 +1,1 @@
-web: gunicorn music_store.wsgi:application
+web: gunicorn guitarstore.wsgi:application
