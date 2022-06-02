@@ -7,7 +7,7 @@ django-countries==7.2.1
 django-crispy-forms==1.14.0
 django-storages==1.12.3
 gunicorn==20.1.0
-heroku==0.1.4
+heroku
 jmespath==1.0.0
 oauthlib==3.2.0
 Pillow==9.0.1
