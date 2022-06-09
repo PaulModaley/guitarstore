@@ -330,11 +330,11 @@ body > footer {
     color: #fff;
     }
     .home-newsletter #email {
-    width: 30%;
+    width: fit-content;
     }
     .submit {
     background-color: #E0AF3A;
-    width: 10%;
+    width: fit-content;
 }
 
 /* FOOTER */
@@ -961,5 +961,12 @@ body {
     background-color: #ffff;
     height: 100vh;
     font-size: large;
+    }
+}
+
+/* hero btn for iphone 5 screen */
+@media (max-width: 320px) {
+#hero-btn-mob {
+        margin-top: -180px;
     }
 }
