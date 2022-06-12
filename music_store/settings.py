@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-3of_vy-n5&v*l)4e*t$jtf*)ccs9-v19nf-qb985me0s^2eq*@'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 
 ALLOWED_HOSTS = ['paulmodaley-legatomusic.herokuapp.com', 'localhost', '127.0.0.1']
@@ -53,6 +53,7 @@ INSTALLED_APPS = [
     'profiles',
     'contact',
     'newsletter',
+    'errors',
     
     # Other
     'crispy_forms',

@@ -16,26 +16,14 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
-from django.conf.urls.static import static
-from products import views
-from django.conf.urls import handler404
-from django.conf.urls import handler500
-
+from django.conf.urls import handler404, handler500
+from errors import views
 
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('accounts/', include('allauth.urls')),
-    path('products/', include('products.urls')),
-    path('', include('home.urls')),
-    path('cart/', include('cart.urls')),
-    path('wishlist/', include('wishlist.urls')),
-    path('checkout/', include('checkout.urls')),
-    path('accounts/profile/', include('profiles.urls')),
-    path('contact/', include('contact.urls')),
-    path('newsletter/', include('newsletter.urls')),
-    path('errors/', include('errors.urls')),
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+    path('', views.error_404, name='error'),
+]
+
 
 handler404 = 'errors.views.error_404'
 handler500 = 'errors.views.error_500'
