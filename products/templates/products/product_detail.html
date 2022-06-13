@@ -196,7 +196,7 @@ Product Details
                 </div>
                 <div class="col-12 col-lg-8">
                     <p class="my-auto back-to-category-link">
-                        <a href="{% url 'products' %}?category={{ product.category.backend_name }}"
+                        <a href="{% url 'products' %}?category={{ product.category.friendly_name }}"
                             class="muted my-auto">
                             {{ product.category.friendly_name }}
                         </a>
