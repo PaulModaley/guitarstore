@@ -17,10 +17,7 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
-from products import views
-from django.conf.urls import handler404
-from django.conf.urls import handler500
-
+from django.conf.urls import handler404, handler500
 
 
 urlpatterns = [
@@ -34,7 +31,6 @@ urlpatterns = [
     path('accounts/profile/', include('profiles.urls')),
     path('contact/', include('contact.urls')),
     path('newsletter/', include('newsletter.urls')),
-    path('errors/', include('errors.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 handler404 = 'errors.views.error_404'
