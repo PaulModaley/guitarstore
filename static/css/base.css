@@ -267,7 +267,7 @@ body > footer {
     border-radius: 9px;
 }
 
-#panel-footer {
+.panel-footer {
     font-size: 25px;
 }
 .panel-body {
@@ -280,12 +280,12 @@ body > footer {
       }
 
 
-#panel-footer-text {
+.panel-footer-text {
     text-decoration: none;
     color: #711F31;
 }
 
-#panel-footer-text:link, a:visited,  a:hover, a:active
+.panel-footer-text:link, a:visited,  a:hover, a:active
 {
     text-decoration: none;
 }
