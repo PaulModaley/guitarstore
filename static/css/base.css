@@ -256,7 +256,7 @@ body > footer {
     color: #E0AF3A !important;
 }
 
-#user-options:hover {
+.user-options:hover {
     color: #E0AF3A;
 }
 /* panels */
