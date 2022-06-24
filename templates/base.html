@@ -10,7 +10,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="Quality musical instruments without the hassle.">
-  <meta name="keywords" content="musical instruments, guitars, electric guitars, bass guitars, piano, digital piano, keyboards, microphones, audio equipment, audio software, recording equipment, studio equipment, musical equipment">
+  <meta name="keywords"
+    content="musical instruments, guitars, electric guitars, bass guitars, piano, digital piano, keyboards, microphones, audio equipment, audio software, recording equipment, studio equipment, musical equipment">
   {% endblock %}
 
   {% block extra_meta %}
@@ -30,8 +31,7 @@
   {% block corejs %}
   <script src="https://kit.fontawesome.com/5251ebbd60.js" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-     crossorigin="anonymous">
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
   </script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
     integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
@@ -48,12 +48,12 @@
 
   <title>Legato Music {% block extra_title %}{% endblock %}</title>
 
-  
-
-    {% load static %}
 
 
-  </head>
+  {% load static %}
+
+
+</head>
 
 <body>
 
@@ -80,7 +80,7 @@
               aria-expanded="false">
               <div class="text-center">
                 <div class="icons"><i class="fas fa-user"></i></div>
-                <p class="my-0" id="head-text">My Account</p>
+                <p class="my-0 head-text">My Account</p>
               </div>
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="user-options">
@@ -96,19 +96,20 @@
               {% endif %}
             </div>
           </li>
-          <li class="list-inline-item" id="icons">
-            <a class="{% if grand_total %} {% else %}text-black{% endif %} nav-link user-options" href="{% url 'wishlist' %}">
+          <li class="list-inline-item">
+            <a class="{% if grand_total %} {% else %}text-black{% endif %} nav-link user-options"
+              href="{% url 'wishlist' %}">
               <div class="text-center">
                 <div class="icons"><i class="fas fa-heart"></i></div>
                 <p class="my-0" id="head-text"> Wishlist</p>
               </div>
             </a>
           </li>
-          <li class="list-inline-item" id="icons">
+          <li class="list-inline-item">
             <a class="{% if grand_total %} {% else %}text-black{% endif %} nav-link user-options" href="/cart">
               <div class="text-center">
                 <div class="icons"><i class="fas fa-shopping-cart"></i></div>
-                <p class="my-0" id="head-text">
+                <p class="my-0 head-text">
                   {% if grand_total %}
                   £{{ grand_total|floatformat:2 }}
                   {% else %}
@@ -118,11 +119,11 @@
               </div>
             </a>
           </li>
-          <li class="list-inline-item" id="icons">
+          <li class="list-inline-item">
             <a class="nav-link user-options" href="{% url 'contact' %}">
               <div class="text-center">
                 <div class="icons"><i class="fas fa-envelope"></i></div>
-                <p class="my-0" id="head-text">Contact Us</p>
+                <p class="my-0 head-text">Contact Us</p>
               </div>
             </a>
           </li>
@@ -132,7 +133,7 @@
     <div class="row bg-white">
       <nav class="navbar navbar-expand-lg navbar-dark w-100">
 
-        
+
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav"
           aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -149,8 +150,8 @@
                 </span>
               </button>
             </div>
+          </form>
         </div>
-        </form>
 
     </div>
     </nav>
@@ -232,7 +233,7 @@
   {% block content %}
   {% endblock %}
 
-  
+
 
   {% block postloadjs %}
   <script type="text/javascript">
@@ -240,32 +241,32 @@
   </script>
   {% endblock %}
 
-          <!-- Footer -->
-          <footer class="container-fluid pt-2" id="footer-main">
-            {% include 'includes/main-footer.html' %}
-            
-            <!-- Copyright -->
-            <div class="row pb-2 pb-lg-3 mt-0 pt-1 pt-lg-2 text-center text-lg">
-                <div class="col">
-                    <div class="row">
-                        <div class="col cream small ml-4">
-                            <span>
-                                &copy; Copyright<span id=copyright></span> | Legato Music | 
-                            </span>
-                            <span class="d-none d-md-inline-block">Developed by: Paul Modaley </span>   
-                            <a href="https://github.com/PaulModaley/musicstore" style="color: #ffff;" target="_blank" rel="noopener">
-                                <i class="fab fa-github fa-lg ml-1" aria-hidden="true"></i>
-                                <span class="sr-only">GitHub</span>
-                            </a>
-                            <a href="https://www.linkedin.com/in/paulmodaley/" style="color: #ffff;" target="_blank" rel="noopener">
-                                <i class="fab fa-linkedin fa-lg ml-1" aria-hidden="true"></i>
-                                <span class="sr-only">linkedin</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
+  <!-- Footer -->
+  <footer class="container-fluid pt-2" id="footer-main">
+    {% include 'includes/main-footer.html' %}
+
+    <!-- Copyright -->
+    <div class="row pb-2 pb-lg-3 mt-0 pt-1 pt-lg-2 text-center text-lg">
+      <div class="col">
+        <div class="row">
+          <div class="col cream small ml-4">
+            <span>
+              &copy; Copyright<span id=copyright></span> | Legato Music |
+            </span>
+            <span class="d-none d-md-inline-block">Developed by: Paul Modaley </span>
+            <a href="https://github.com/PaulModaley/musicstore" style="color: #ffff;" target="_blank" rel="noopener">
+              <i class="fab fa-github fa-lg ml-1" aria-hidden="true"></i>
+              <span class="sr-only">GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/in/paulmodaley/" style="color: #ffff;" target="_blank" rel="noopener">
+              <i class="fab fa-linkedin fa-lg ml-1" aria-hidden="true"></i>
+              <span class="sr-only">linkedin</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 </body>
 

@@ -2,8 +2,10 @@
 
     <div class="collapse navbar-collapse" id="main-nav">
         <div class="d-lg-none">
-            <a class="font-weight-bold" nav-link href="/"><h2 style="color: #E0AF3A;">Legato Music</h2></a>
-          </div>
+            <a class="font-weight-bold nav-link" href="/">
+                <h2 style="color: #E0AF3A;">Legato Music</h2>
+            </a>
+        </div>
         <ul class="navbar-nav w-auto">
             <li class="nav-item dropdown">
                 <a class="font-weight-bold nav-link mr-5" href="/products/" id="all-products-link"
@@ -23,10 +25,10 @@
                     Guitars
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="{% url 'products' %}?category=Acoustic Guitars">Acoustic</a>
-                    <a class="dropdown-item" href="{% url 'products' %}?category=Bass Guitars">Bass</a>
-                    <a class="dropdown-item" href="{% url 'products' %}?category=Classical Guitars">Classical</a>
-                    <a class="dropdown-item" href="{% url 'products' %}?category=Electric Guitars">Electric</a>
+                    <a class="dropdown-item" href="{% url 'products' %}?category=Acoustic%20Guitars">Acoustic</a>
+                    <a class="dropdown-item" href="{% url 'products' %}?category=Bass%20Guitars">Bass</a>
+                    <a class="dropdown-item" href="{% url 'products' %}?category=Classical%20Guitars">Classical</a>
+                    <a class="dropdown-item" href="{% url 'products' %}?category=Electric%20Guitars">Electric</a>
                 </div>
             </li>
 
@@ -48,9 +50,9 @@
                     Studio
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="{% url 'products' %}?category=Home Recording">Home Recording</a>
+                    <a class="dropdown-item" href="{% url 'products' %}?category=Home%20Recording">Home Recording</a>
                     <a class="dropdown-item" href="{% url 'products' %}?category=Microphones">Microphones</a>
-                    <a class="dropdown-item" href="{% url 'products' %}?category=Mixing Desks">Mixing Desks</a>
+                    <a class="dropdown-item" href="{% url 'products' %}?category=Mixing%20Desks">Mixing Desks</a>
                     <a class="dropdown-item" href="{% url 'products' %}?category=Speakers">Speakers</a>
                 </div>
             </li>

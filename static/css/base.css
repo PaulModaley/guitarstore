@@ -67,7 +67,7 @@ body > footer {
     margin-left: -15px;
 }
 
-#head-text {
+.head-text {
     font-size: 10px;
 }
 
@@ -949,7 +949,7 @@ Hide search bar in mobile view */
 }
 
 @media (min-width: 1920px) {
-    #head-text {
+    .head-text {
         font-size: large;
     }
 }
