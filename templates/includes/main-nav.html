@@ -7,7 +7,7 @@
             </a>
         </div>
         <ul class="navbar-nav w-auto">
-            <div class="nav-item dropdown">
+            <li class="nav-item dropdown">
                 <a class="font-weight-bold nav-link mr-5" href="/products/" id="all-products-link"
                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     All Products
@@ -17,7 +17,7 @@
                     <a href="{% url 'products' %}?sort=rating&direction=asc" class="dropdown-item">By Rating</a>
                     <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
                 </div>
-            </div>
+            </li>
 
             <div class="nav-item dropdown">
                 <a class="font-weight-bold nav-link mr-5" href="" id="guitars-link" data-toggle="dropdown"
@@ -32,7 +32,7 @@
                 </div>
             </div>
 
-            <div class="nav-item dropdown">
+            <li class="nav-item dropdown">
                 <a class="font-weight-bold nav-link mr-5" href="#" id="keys-link" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">
                     Keys
@@ -42,9 +42,9 @@
                     <a class="dropdown-item" href="{% url 'products' %}?category=Digital">Digital</a>
                     <a class="dropdown-item" href="{% url 'products' %}?category=Keyboards">Keyboards</a>
                 </div>
-            </div>
+            </li>
 
-            <div class="nav-item dropdown">
+            <li class="nav-item dropdown">
                 <a class="font-weight-bold nav-link mr-5" href="#" id="audio-link" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">
                     Studio
@@ -55,14 +55,14 @@
                     <a class="dropdown-item" href="{% url 'products' %}?category=Mixing%20Desks">Mixing Desks</a>
                     <a class="dropdown-item" href="{% url 'products' %}?category=Speakers">Speakers</a>
                 </div>
-            </div>
+            </li>
 
         </ul>
 
 
         <div class="row">
             <div class="col-4">
-                <div class="nav-item dropdown">
+                <li class="nav-item dropdown">
                     <a class="nav-link d-inline d-lg-none" href="#" id="mobile-search" data-toggle="dropdown"
                         aria-haspopup="true" aria-expanded="false">
                         <div class="text-center" style="color: white;">
@@ -87,7 +87,7 @@
                             </div>
                         </form>
                     </div>
-                </div>
+                </li>
             </div>
 
             <div class="col-4">
