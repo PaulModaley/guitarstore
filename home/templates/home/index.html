@@ -56,8 +56,8 @@
         <div class="panel-heading text-center"></div>
         <div class="panel-body"><a
             href="{% url 'products' %}?category=Acoustic%20Guitars,Classical%20Guitar,Electric%20Guitars"
-            class="panel-footer-text"><img src="{{ MEDIA_URL }}guitar_product_image.png" class="img-responsive" style="width:100%;"
-              alt="Image"></a></div>
+            class="panel-footer-text"><img src="{{ MEDIA_URL }}guitar_product_image.png" class="img-responsive"
+              style="width:100%;" alt="Image"></a></div>
         <div class="panel-footer text-center"><a
             href="{% url 'products' %}?category=Acoustic%20Guitars,Classical%20Guitar,Electric%20Guitars"
             class="panel-footer-text">
@@ -69,8 +69,8 @@
       <div class="panel panel-success">
         <div class="panel-heading text-center"></div>
         <div class="panel-body"><a href="{% url 'products' %}?category=Piano,Keyboard,Digital"
-            class="panel-footer-text"><img src="{{ MEDIA_URL }}keys_product%20image.png" class="img-responsive" style="width:100%"
-              alt="Image"></a></div>
+            class="panel-footer-text"><img src="{{ MEDIA_URL }}keys_product%20image.png" class="img-responsive"
+              style="width:100%" alt="Image"></a></div>
         <div class="panel-footer text-center"><a href="{% url 'products' %}?category=Piano,Keyboard,Digital"
             class="panel-footer-text">
             <h1 class="panel-footer" style="color: #711F31;">Keys</h1>
@@ -81,7 +81,8 @@
       <div class="panel panel-success">
         <div class="panel-heading text-center"></div>
         <div class="panel-body"><a href="{% url 'products' %}?category=Home%20Recording,Microphones,Software"><img
-              src="{{ MEDIA_URL }}audio_product_image.png" class="img-responsive" style="width:100%" alt="Image"></a></div>
+              src="{{ MEDIA_URL }}audio_product_image.png" class="img-responsive" style="width:100%" alt="Image"></a>
+        </div>
         <div class="panel-footer text-center"><a
             href="{% url 'products' %}?category=Home%20Recording,Microphones,Software" class="panel-footer-text">
             <h1 class="panel-footer" style="color: #711F31;">Studio</h1>
@@ -110,17 +111,18 @@
       <p style="color: #E0AF3A;">Receive the latest product news, special offers and deals.</p>
     </div>
     <div>
-      <input name="email" id="email" type="email" placeholder="Enter your email" />
+      <input name="email" id="email" type="email" placeholder="Enter your email"/>
 
       <input class="submit" type="submit" value='Sign Up'></input>
     </div>
-    </div>
-
   </form>
-
-
-
-  </div>
 </div>
 
-  {% endblock %}
+
+
+
+
+</div>
+</div>
+
+{% endblock %}
