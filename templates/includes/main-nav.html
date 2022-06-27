@@ -7,7 +7,7 @@
             </a>
         </div>
         <div class="navbar-nav w-auto">
-            <li class="nav-item dropdown">
+            <nav class="nav-item dropdown">
                 <a class="font-weight-bold nav-link mr-5" href="/products/" id="all-products-link"
                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     All Products
@@ -17,7 +17,7 @@
                     <a href="{% url 'products' %}?sort=rating&direction=asc" class="dropdown-item">By Rating</a>
                     <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
                 </div>
-            </li>
+            </nav>
 
             <div class="nav-item dropdown">
                 <a class="font-weight-bold nav-link mr-5" href="" id="guitars-link" data-toggle="dropdown"
@@ -32,7 +32,7 @@
                 </div>
             </div>
 
-            <li class="nav-item dropdown">
+            <nav class="nav-item dropdown">
                 <a class="font-weight-bold nav-link mr-5" href="#" id="keys-link" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">
                     Keys
@@ -42,9 +42,9 @@
                     <a class="dropdown-item" href="{% url 'products' %}?category=Digital">Digital</a>
                     <a class="dropdown-item" href="{% url 'products' %}?category=Keyboards">Keyboards</a>
                 </div>
-            </li>
+            </nav>
 
-            <li class="nav-item dropdown">
+            <nav class="nav-item dropdown">
                 <a class="font-weight-bold nav-link mr-5" href="#" id="audio-link" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">
                     Studio
@@ -55,14 +55,14 @@
                     <a class="dropdown-item" href="{% url 'products' %}?category=Mixing%20Desks">Mixing Desks</a>
                     <a class="dropdown-item" href="{% url 'products' %}?category=Speakers">Speakers</a>
                 </div>
-            </li>
+            </nav>
 
         </div>
 
 
         <div class="row">
             <div class="col-4">
-                <li class="nav-item dropdown">
+                <section class="nav-item dropdown">
                     <a class="nav-link d-inline d-lg-none" href="#" id="mobile-search" data-toggle="dropdown"
                         aria-haspopup="true" aria-expanded="false">
                         <div class="text-center" style="color: white;">

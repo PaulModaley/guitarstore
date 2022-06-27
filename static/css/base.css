@@ -122,6 +122,10 @@ body > footer {
 
 /* Underline animation from 30 Seconds of Code https://www.30secondsofcode.org/css/s/hover-underline-animation */
 
+.nav-item {
+    list-style: none;
+}
+
 .nav-link {
     display: inline-block;
     position: relative;
