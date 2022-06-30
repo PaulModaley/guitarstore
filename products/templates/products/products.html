@@ -13,10 +13,14 @@
         Sort Products
     </button>
     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <a class="dropdown-item" href="{% url 'products' %}?sort=price&direction=asc" style="color: #711F31;">By price (low - high)</a>
-        <a class="dropdown-item" href="{% url 'products' %}?sort=rating&direction=asc" style="color: #711F31;">By rating (low - high)</a>
-        <a class="dropdown-item" href="{% url 'products' %}?sort=price&direction=desc" style="color: #711F31;">By price (high - low)</a>
-        <a class="dropdown-item" href="{% url 'products' %}?sort=rating&direction=desc" style="color: #711F31;">By rating (high - low)</a>
+        <a class="dropdown-item" href="{% url 'products' %}?sort=price&direction=asc" style="color: #711F31;">By price
+            (low - high)</a>
+        <a class="dropdown-item" href="{% url 'products' %}?sort=rating&direction=asc" style="color: #711F31;">By rating
+            (low - high)</a>
+        <a class="dropdown-item" href="{% url 'products' %}?sort=price&direction=desc" style="color: #711F31;">By price
+            (high - low)</a>
+        <a class="dropdown-item" href="{% url 'products' %}?sort=rating&direction=desc" style="color: #711F31;">By
+            rating (high - low)</a>
 
 
     </div>
@@ -53,8 +57,7 @@
                     {% endif %}
                     <div class="row">
                         <div class="card-body pb-0">
-                            <p class="mb-0" style="text-align: center;"><a
-                                    href="{% url 'product_detail' product.id %}"
+                            <p class="mb-0" style="text-align: center;"><a href="{% url 'product_detail' product.id %}"
                                     style="text-decoration: none; color: #711F31;">{{product.name}}</p><br></a>
                         </div>
                         <div class="px-2" style="margin: auto; width: 100%;">
@@ -64,9 +67,10 @@
 
                     <div class="px-2 mt-3">
 
-                        <a href="{% url 'product_detail' product.id %}"
-                            style="text-decoration: none; color: white;"><button class="btn"
-                                style="text-decoration: none; text-decoration: none; margin: auto; width: 100%;">View</button></a>
+>
+                            <button class="btn"
+                                style="text-decoration: none; text-decoration: none; margin: auto; width: 100%;">                        <a href="{% url 'product_detail' product.id %}"
+                                style="text-decoration: none; color: white;">View</button></a>
                         <div class="col w-100">
                             {% if request.user.is_superuser %}
                             <small class="ml-3">
@@ -82,7 +86,7 @@
 
         {% endfor %}
     </div>
-    
+
     <!-- paginator links (https://docs.djangoproject.com/en/4.0/topics/pagination/)-->
     <div class="container-fluid bottom">
         <div class="row center table-glass paginator" style="text-align: center;">
