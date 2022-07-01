@@ -96,11 +96,11 @@
                 <a class="btn px-3" href="?page=1">&laquo; first</a>
                 <a class="btn px-3" href="?page={{ products.previous_page_number }}">previous</a>
                 {% endif %}
-                <div>
+                
                     <span class="current span12 text-center">
                         Page {{ products.number }} of {{ products.paginator.num_pages }}.
                     </span>
-                </div>
+                
 
                 {% if products.has_next %}
                 <a class="btn px-3" href="?page={{ products.next_page_number }}">next</a>
