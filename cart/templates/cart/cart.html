@@ -121,8 +121,8 @@
                                         onclick="window.location.href='{% url 'checkout' %}'">Proceed to
                                         Checkout</button>
                                     <button class="btn-block btn-blue" action="{% url 'products' %}"
-                                            style="text-decoration: none; color: white;">Continue
-                                            Shopping</button>
+                                        style="text-decoration: none; color: white;">Continue
+                                        Shopping</button>
                                 </div>
                             </div>
                         </div>
@@ -133,16 +133,16 @@
 
     </div>
 </div>
-    {% else %}
-    <div class="my-5 w-100 ">
-        <p class="lead mb-5 text-center">Your cart is empty.</p>
-    </div>
-    <div>
-        <button class="btn-block btn-blue" action="{% url 'products' %}"
-                style="text-decoration: none; color: white;">Continue Shopping</button>
-    </div>
-    {% endif %}
+{% else %}
+<div class="my-5 w-100 ">
+    <p class="lead mb-5 text-center">Your cart is empty.</p>
 </div>
+<div>
+    <button class="btn-block btn-blue" action="{% url 'products' %}"
+        style="text-decoration: none; color: white;">Continue Shopping</button>
+</div>
+{% endif %}
+
 
 {% endblock %}
 {% block postloadjs %}
