@@ -919,14 +919,12 @@ Hide search bar in mobile view */
 @media (min-width: 1500px) {
     .display-4 {
         margin-top: 100px;
-        resize: 120vh;
         }
 }
 
 @media (min-width: 1920px) {
     .display-4 {
         margin-top: 80px;
-        resize: 110vh;
     }
 }
 
