@@ -1,4 +1,4 @@
-@layer base
+
 
 html {
     height: 100%;
@@ -919,14 +919,14 @@ Hide search bar in mobile view */
 @media (min-width: 1500px) {
     .display-4 {
         margin-top: 100px;
-        size: 120vh;
+        resize: 120vh;
         }
 }
 
 @media (min-width: 1920px) {
     .display-4 {
         margin-top: 80px;
-        size: 110vh;
+        resize: 110vh;
     }
 }
 
