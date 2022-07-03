@@ -133,14 +133,16 @@
     </div>
 
 {% else %}
-<div class="my-5 w-100 ">
+<div class="my-5 w-100">
     <p class="lead mb-5 text-center">Your cart is empty.</p>
 </div>
+
 <div>
     <form action="{% url 'products' %}" method="get">
         <button class="btn-block btn-blue" style="text-decoration: none; color: white;">Continue Shopping</button>
     </form>
 </div>
+
 {% endif %}
 
 
