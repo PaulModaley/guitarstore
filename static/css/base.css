@@ -8,7 +8,11 @@ body {
     color: #711F31;
     font-family: 'Comfortaa';
     background-color: #ffff;
-    height: 100vh;
+    min-height: 100%;
+    overflow-x: hidden;
+    display: grid;
+    min-height: 100vh;
+    margin: 0;
 }
 
 
@@ -19,6 +23,10 @@ body > footer {
     clear: right;
 }
 
+.banner-txt {
+    background-color: #711F31;
+    height: fit-content;
+}
 
 /* Nav bar and header styling */
 .fab {
