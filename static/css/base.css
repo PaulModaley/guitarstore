@@ -919,6 +919,7 @@ Hide search bar in mobile view */
 @media (min-width: 1500px) {
     .display-4 {
         margin-top: 100px;
+        font-size: 550%;
         }
 }
 
