@@ -8,22 +8,19 @@ from .models import Contact
 from django.shortcuts import render
 
 
-
 def contact(request):
-	context ={}
+    context = {}
 
-	# create object of form
-	form = ContactForm(request.POST or None, request.FILES or None)
-	
-	# check if form data is valid
-	if form.is_valid():
-		# save the form data to model
-		form.save()
-		messages.success(request, 'Your message has been sent!')
-            # redirect to contact page
-        
+    # create object of form
+    form = ContactForm(request.POST or None, request.FILES or None)
 
-	template = 'contact/contact.html'
-	context['form']= form
-	return render(request, template, context)
+    # check if form data is valid
+    if form.is_valid():
+        # save the form data to model
+        form.save()
+        messages.success(request, "Your message has been sent!")
+        # redirect to contact page
 
+    template = "contact/contact.html"
+    context["form"] = form
+    return render(request, template, context)

@@ -10,11 +10,11 @@ class Review(models.Model):
     """
 
     RATING = [
-        (1, '1'),
-        (2, '2'),
-        (3, '3'),
-        (4, '4'),
-        (5, '5'),
+        (1, "1"),
+        (2, "2"),
+        (3, "3"),
+        (4, "4"),
+        (5, "5"),
     ]
 
     user_profile = models.ForeignKey(UserProfile, on_delete=models.CASCADE)
@@ -24,5 +24,5 @@ class Review(models.Model):
     created_on = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return f'User: {self.user_profile} | Product: {self.product} | \
-                Rating: {self.rating}'
+        return f"User: {self.user_profile} | Product: {self.product} | \
+                Rating: {self.rating}"

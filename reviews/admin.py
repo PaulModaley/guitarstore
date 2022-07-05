@@ -14,12 +14,15 @@ class ReviewAdmin(admin.ModelAdmin):
 
     model = Review
     list_display = (
-        'product',
-        'created_on',
-        'rating',
-        'user_profile',
-        'review',
+        "product",
+        "created_on",
+        "rating",
+        "user_profile",
+        "review",
     )
 
-    ordering = ('-created_on', '-rating', )
-    list_filter = ('rating',)
+    ordering = (
+        "-created_on",
+        "-rating",
+    )
+    list_filter = ("rating",)

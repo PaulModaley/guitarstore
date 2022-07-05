@@ -7,32 +7,53 @@ import django.db.models.deletion
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('products', '0001_initial'),
-        ('profiles', '0001_initial'),
-        ('wishlist', '0002_wishlistproduct_quantity'),
+        ("products", "0001_initial"),
+        ("profiles", "0001_initial"),
+        ("wishlist", "0002_wishlistproduct_quantity"),
     ]
 
     operations = [
         migrations.CreateModel(
-            name='WishList',
+            name="WishList",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('product', models.ForeignKey(default=1, on_delete=django.db.models.deletion.CASCADE, to='products.product')),
-                ('user_profile', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='profiles.userprofile')),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                (
+                    "product",
+                    models.ForeignKey(
+                        default=1,
+                        on_delete=django.db.models.deletion.CASCADE,
+                        to="products.product",
+                    ),
+                ),
+                (
+                    "user_profile",
+                    models.ForeignKey(
+                        on_delete=django.db.models.deletion.CASCADE,
+                        to="profiles.userprofile",
+                    ),
+                ),
             ],
         ),
         migrations.RemoveField(
-            model_name='wishlistproduct',
-            name='product',
+            model_name="wishlistproduct",
+            name="product",
         ),
         migrations.RemoveField(
-            model_name='wishlistproduct',
-            name='wishlist',
+            model_name="wishlistproduct",
+            name="wishlist",
         ),
         migrations.DeleteModel(
-            name='UserWishlist',
+            name="UserWishlist",
         ),
         migrations.DeleteModel(
-            name='WishlistProduct',
+            name="WishlistProduct",
         ),
     ]

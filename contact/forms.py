@@ -4,7 +4,7 @@ from .models import Contact
 
 # create a ModelForm
 class ContactForm(forms.ModelForm):
-	# specify the name of model to use
-	class Meta:
-		model = Contact
-		fields = "__all__"
+    # specify the name of model to use
+    class Meta:
+        model = Contact
+        fields = "__all__"
