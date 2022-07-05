@@ -48,6 +48,8 @@ def remove_from_wishlist(request, product_id):
     # find a match to the product and user, then .delete() it
     WishList.objects.filter(product=product, user_profile=user).delete()
 
-    messages.info(request, f"{product.name} has been removed from your Wishlist!")
+    messages.info(
+        request, f"{product.name} has been removed from your Wishlist!"
+    )
 
     return redirect(reverse("product_detail", args=[product.id]))
