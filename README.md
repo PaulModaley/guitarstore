@@ -8,7 +8,7 @@ Using the principles of UX design, this fully-responsive website was developed u
 
 Stripe provides some of the functionality for the website's payment system which is currently limited to accept test card details only. The full details of Stripe's test cards can be found [here](https://stripe.com/docs/testing#cards).
 
-![Final project image home page](documentation/screenshots/amiresponsive/amiresponsive.png)
+![Final project image home page](https://github.com/PaulModaley/guitarstore/blob/c329a72ba89a40bde0b6b226b937a09a0b512029/media/responsive.png)
 
 ## **Contents**
 
