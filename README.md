@@ -131,7 +131,7 @@ The wireframes below were created and used to loosely inform the development pro
 
 
 
-![Desktop](C:\Users\Paul Modaley\Desktop\Coding course\P5\wireframes\desktop\Desktop.png)
+![Desktop](/workspace/guitarstore/media/Desktop.png)
 
 While the project relied on these wireframes, there are some differences between the wireframes and the final product due to time constraints and change of mind for different/better UI.
 
