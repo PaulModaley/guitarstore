@@ -113,7 +113,7 @@ Stripe provides some of the functionality for the website's payment system which
 ## **Design**
 
 ### Colour Scheme
-* The website uses a selection of colours from this [automatically generated palette](https://www.schemecolor.com/music-store.php). Two of the colours from this palette were chosen to complement one another while also providing sufficient contrast between backgrounds and text elements. ![music-store-by-schemecolor](C:\Users\Paul Modaley\Downloads\music-store-by-schemecolor.png)
+* The website uses a selection of colours from this [automatically generated palette](https://www.schemecolor.com/music-store.php). Two of the colours from this palette were chosen to complement one another while also providing sufficient contrast between backgrounds and text elements. ![music-store-by-schemecolor](https://github.com/PaulModaley/guitarstore/blob/8f95bb01c61ae0772f5911bf7c8dfbe371c3bd2b/media/music-store-colours.png)
 * In addition to #711F31 and #E0AF3A, white (#ffff) is also employed on the website to complement and contrast the two main colours.
 
 ### Typography
