@@ -143,7 +143,7 @@ While the project relied on these wireframes, there are some differences between
 
 Shown below on larger screen![Home](https://github.com/PaulModaley/guitarstore/blob/767912d0bca06699df433b36889ebb8c983a1cbd/media/home_page_hero.jpg)
 
-![Home2](https://github.com/PaulModaley/guitarstore/blob/767912d0bca06699df433b36889ebb8c983a1cbd/media/home_page_smaller_screens.png)
+Shown below on larger screen![Home2](https://github.com/PaulModaley/guitarstore/blob/767912d0bca06699df433b36889ebb8c983a1cbd/media/home_page_smaller_screens.png)
 
 #### Navigation
 
@@ -154,8 +154,13 @@ Shown below with logged-in status of the user![Nav2](https://github.com/PaulModa
 
 Shown below with logged-out status of the user![Nav3](https://github.com/PaulModaley/guitarstore/blob/6654a69dd05bda8f910d5e6b2f80af339bb6f051/media/navbar2_loggedout.png)
 
-Mobile navigation![Nav3]
-(https://github.com/PaulModaley/guitarstore/blob/6654a69dd05bda8f910d5e6b2f80af339bb6f051/media/nav_mobile.png)
+Mobile navigation![Nav3](https://github.com/PaulModaley/guitarstore/blob/6654a69dd05bda8f910d5e6b2f80af339bb6f051/media/nav_mobile.png)
+
+#### Footer
+
+Footer on smaller screens![Footer1]()
+
+Footer on larger screens![Footer2]()
 
 
 
