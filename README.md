@@ -190,7 +190,7 @@ Example of 'success message' displayed upon completion of a user action![Toasts]
 
 ### Newsletter Signup Form
 
-Newsletter signup form located within the site footer![Newsletter]()
+Newsletter signup form located within the site footer![Newsletter](https://github.com/PaulModaley/guitarstore/blob/03865539ad67ec8ac5caa01e635c8879ed84116f/media/newsletter.png)
 
 ### Future Features
 
