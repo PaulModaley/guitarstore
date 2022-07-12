@@ -133,6 +133,9 @@ The wireframes below were created and used to loosely inform the development pro
 
 Desktop![Desktop](https://github.com/PaulModaley/guitarstore/blob/0af6feb6c98f11f6fec7760e1ba69132d4b1de3b/media/Desktop.png)
 
+Mobile![Mobile](https://github.com/PaulModaley/guitarstore/blob/0bd24a3e2624409506e4971ef63e9e340cb5afba/media/Mobile.png)
+
+
 While the project relied on these wireframes, there are some differences between the wireframes and the final product due to time constraints and change of mind for different/better UI.
 
 
