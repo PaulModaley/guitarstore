@@ -139,13 +139,13 @@ While the project relied on these wireframes, there are some differences between
 
 ## Features
 
-#### Home Page
+### Home Page
 
 Shown below on larger screen![Home](https://github.com/PaulModaley/guitarstore/blob/767912d0bca06699df433b36889ebb8c983a1cbd/media/home_page_hero.jpg)
 
-Shown below on larger screen![Home2](https://github.com/PaulModaley/guitarstore/blob/767912d0bca06699df433b36889ebb8c983a1cbd/media/home_page_smaller_screens.png)
+Shown here on smaller screen![Home2](https://github.com/PaulModaley/guitarstore/blob/767912d0bca06699df433b36889ebb8c983a1cbd/media/home_page_smaller_screens.png)
 
-#### Navigation
+### Navigation
 
 Shown below with active drop down menu![Nav](https://github.com/PaulModaley/guitarstore/blob/76027a471a2bce33f36a7b85d32378b43936ec16/media/navbar1.png)
 
@@ -156,29 +156,37 @@ Shown below with logged-out status of the user![Nav3](https://github.com/PaulMod
 
 Mobile navigation![Nav3](https://github.com/PaulModaley/guitarstore/blob/6654a69dd05bda8f910d5e6b2f80af339bb6f051/media/nav_mobile.png)
 
-#### Footer
+### Footer
 
 Footer on smaller screens![Footer1](https://github.com/PaulModaley/guitarstore/blob/09c6e7d457718d2584e53b766c9613991964a6ea/media/footer_smaller_screen.png)
 
 Footer on larger screens![Footer2](https://github.com/PaulModaley/guitarstore/blob/09c6e7d457718d2584e53b766c9613991964a6ea/media/footer_large_screen.png)
 
-#### Product Page
+### Product Page
 
 Product page displaying items including sort button![Products](https://github.com/PaulModaley/guitarstore/blob/09c6e7d457718d2584e53b766c9613991964a6ea/media/products.png)
 
-#### Shopping Cart Page
+### Shopping Cart Page
 
 Shopping cart containing an item![Cart1](https://github.com/PaulModaley/guitarstore/blob/bf0efb835bb47b6568654e3e080b465f7d1a7507/media/shopping_cart.png)
 
 Empty shopping cart![Cart2](https://github.com/PaulModaley/guitarstore/blob/33b05a61eac3d47fd2fd14548dbdce0c132f0fde/media/empty_shopping_cart.png)
 
-#### Checkout Page
+### Checkout Page
 
 Checkout page on larger screen![Checkout](https://github.com/PaulModaley/guitarstore/blob/33b05a61eac3d47fd2fd14548dbdce0c132f0fde/media/checkout.png)
 
-#### Contact Us Page
+### Contact Us Page
 
-Contact us page featuring form rendered using crispy forms![Contact]()
+Contact us page featuring form rendered using crispy forms![Contact](https://github.com/PaulModaley/guitarstore/blob/064037f3387af44074b7ef5f9423f48fac68fcd2/media/contact_us.png)
+
+### Wishlist Page
+
+Wishlist page showing a user's saved item![Wish]()
+
+### Toasts
+
+Example of 'success message' displayed upon completion of a user action![Toasts]()
 
 ### Future Features
 
