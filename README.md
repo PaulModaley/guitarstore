@@ -139,84 +139,26 @@ While the project relied on these wireframes, there are some differences between
 
 ## Features
 
-Home Page - Larger Screens![Home](https://github.com/PaulModaley/guitarstore/blob/767912d0bca06699df433b36889ebb8c983a1cbd/media/home_page_hero.jpg)
+#### Home Page
+(https://github.com/PaulModaley/guitarstore/blob/767912d0bca06699df433b36889ebb8c983a1cbd/media/home_page_hero.jpg)
 
-Home Page - Smaller Screens ![Home mobile](https://github.com/PaulModaley/guitarstore/blob/767912d0bca06699df433b36889ebb8c983a1cbd/media/home_page_smaller_screens.png)
+(https://github.com/PaulModaley/guitarstore/blob/767912d0bca06699df433b36889ebb8c983a1cbd/media/home_page_smaller_screens.png)
+
+#### Navigation
+
+Shown below with active drop down menu.
+(https://github.com/PaulModaley/guitarstore/blob/f07706e9d383029b59ff3952bd31b0013104d262/media/nav bar 1.png)
+
+Shown below with logged-in status of the user.
+(https://github.com/PaulModaley/guitarstore/blob/f07706e9d383029b59ff3952bd31b0013104d262/media/nav bar 2 - logged in.png)
+
+Shown below with logged-out status of the user.
+(https://github.com/PaulModaley/guitarstore/blob/f07706e9d383029b59ff3952bd31b0013104d262/media/nav bar 2 - logged out.png)
+
+Mobile navigation shown below.
+(https://github.com/PaulModaley/guitarstore/blob/f07706e9d383029b59ff3952bd31b0013104d262/media/nav menu mobile dropdown.png)
 
 
-* Navigation Bar
-  * ![Navigation Bar](https://github.com/PaulModaley/guitarstore/blob/22ac23e4b7d73e2225eb9fdfd8af344a4a62a51d/media/nav bar 1.png)
-
-* Footer
-  * ![Footer](documentation/screenshots/footer.png)
-
-* Our Story
-  * Gallery
-  * ![Gallery](documentation/screenshots/gallery.png)
-
-* View a List of Products
-  * Sort the List of Products by:
-    * _Name_ (A - Z / Z - A)
-    * _Category_ (A - Z / Z - A)
-    * _Price_ (low - high / high - low)
-    * _Ratings_ (low - high / high - low)
-    * ![Sort By Name In Category](documentation/screenshots/sort-by-price.png)
-
-* View a List of Categorized Products
-  * Sort the Categorized List of Products by:
-    * _Name_ (A - Z / Z - A)
-    * _Category_ (A - Z / Z - A)
-    * _Price_ (low - high / high - low)
-    * _Ratings_ (low - high / high - low)
-    * ![Sort By Name In Category](documentation/screenshots/sort-by-name-in-category.png)
-
-* View the number of ratings and average rating for each product on All Products and Categorized Products page
-  * ![Ratings on All Products](documentation/screenshots/ratings-all-products.png)
-
-* View Product Details and stock availibility
-  * ![Product Details and two items availible](documentation/screenshots/details.png)
-
-* Add Products to Shopping Cart
-* Update quantity and delete Products from Shopping Cart
-  * ![Add, Update, Delete Products from Cart](documentation/screenshots/add-update-delete-cart.png)
-
-* Make purchases of the products in the Shopping Cart
-  * If the payment fails, the user is directed back to the checkout form and is shown a message that the payment failed.
-  * If the payment succeeds, the user will be sent a confirmation email containing the full order details and order number. The user will be redirected to the checkout success page and a message will display, informing the user that the payment succeeded, containing the order details and order number.
-  * Ability for a registered user to save their details upon purchase for ease of future purchases
-  * ![Checkout Fail and Success](documentation/screenshots/checkout-success.png)
-
-* Profile
-  * Update Profile
-  * Purchases get saved to a Order History on a registered user's Profile
-  * ![Update Profile and Order History](documentation/screenshots/update-profile.png)
-
-* Register/Sign In
-* Sign Out
-* Email Verification
-  * ![Register, Sign In, Sign Out, Verify Email](documentation/screenshots/account.png)
-
-* Wishlist (for the logged in user)
-  * Add or remove items from the Wishlist
-  * Display wishlisted items with a red heart on All Products (Categorized Products) page
-  * ![Wishlist](documentation/screenshots/add-to-wishlist.png)
-
-* Diplay of Reviews with Username and the Date it was added, for each Product 
-* Add Reviews (for the logged in user)
-  * ![Reviews](documentation/screenshots/reviews.png)
-
-* Store owner has the ability to add Categories
-* Store owner has the ability to add / edit and delete Products
-  * ![Add, Update, Delete Products/Categories](documentation/screenshots/add-product.png)
-
-* Contact Form
-  * ![Contact Form](documentation/screenshots/contact.png)
-
-* 404 Page Not Found
-* 500 Internal Server Error
-  * ![404 Page Not Found](documentation/screenshots/iphone375/error404.png)
-
----
 
 ### Future Features
 
