@@ -140,9 +140,10 @@ While the project relied on these wireframes, there are some differences between
 ## Features
 
 #### Home Page
-(https://github.com/PaulModaley/guitarstore/blob/767912d0bca06699df433b36889ebb8c983a1cbd/media/home_page_hero.jpg)
 
-(https://github.com/PaulModaley/guitarstore/blob/767912d0bca06699df433b36889ebb8c983a1cbd/media/home_page_smaller_screens.png)
+Shown below on larger screen![Home](https://github.com/PaulModaley/guitarstore/blob/767912d0bca06699df433b36889ebb8c983a1cbd/media/home_page_hero.jpg)
+
+Shown below on larger screen![Home2](https://github.com/PaulModaley/guitarstore/blob/767912d0bca06699df433b36889ebb8c983a1cbd/media/home_page_smaller_screens.png)
 
 #### Navigation
 
@@ -151,11 +152,9 @@ Shown below with active drop down menu![Nav](https://github.com/PaulModaley/guit
 Shown below with logged-in status of the user![Nav2](https://github.com/PaulModaley/guitarstore/blob/76027a471a2bce33f36a7b85d32378b43936ec16/media/navbar2_loggedin.png)
 
 
-Shown below with logged-out status of the user.
-(https://github.com/PaulModaley/guitarstore/blob/f07706e9d383029b59ff3952bd31b0013104d262/media/nav bar 2 - logged out.png)
+Shown below with logged-out status of the user![Nav3](https://github.com/PaulModaley/guitarstore/blob/f07706e9d383029b59ff3952bd31b0013104d262/media/nav bar 2 - logged out.png)
 
-Mobile navigation shown below.
-(https://github.com/PaulModaley/guitarstore/blob/f07706e9d383029b59ff3952bd31b0013104d262/media/nav menu mobile dropdown.png)
+Mobile navigation![Nav3](https://github.com/PaulModaley/guitarstore/blob/f07706e9d383029b59ff3952bd31b0013104d262/media/nav menu mobile dropdown.png)
 
 
 
