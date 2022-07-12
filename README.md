@@ -139,13 +139,14 @@ While the project relied on these wireframes, there are some differences between
 
 ## Features
 
-* Home
-  * Hero Image
-  * List of Categories that lead to the Categorized Products when clicked
-  * ![Home](documentation/screenshots/home.png)
+* Home (Larger Screens)
+  * ![Home](https://github.com/PaulModaley/guitarstore/blob/22ac23e4b7d73e2225eb9fdfd8af344a4a62a51d/media/home page with hero.jpg)
+
+* Home (Smaller Screens)
+  * ![Home](https://github.com/PaulModaley/guitarstore/blob/22ac23e4b7d73e2225eb9fdfd8af344a4a62a51d/media/home page smaller screens.png)
 
 * Navigation Bar
-  * ![Navigarion Bar](documentation/screenshots/navbar.png)
+  * ![Navigation Bar](https://github.com/PaulModaley/guitarstore/blob/22ac23e4b7d73e2225eb9fdfd8af344a4a62a51d/media/nav bar 1.png)
 
 * Footer
   * ![Footer](documentation/screenshots/footer.png)
@@ -537,7 +538,7 @@ All testing and project barriers and solutions has been documented here - [TESTI
 * [Bootstrap](https://getbootstrap.com/) was referenced to enable the responsivity, layout and styling of Legato Music. 
 * [CSS Tricks](https://css-tricks.com/a-clever-sticky-footer-technique/) - Enabled me to position the footer at the bottom of the page.
 * [Carla Buongiorno's La Fraschetta Repository](https://github.com/CarlaBuongiorno/la_fraschetta) - Code for the 'wishlist' features was borrowed and adapted from this repository. Moreover, the structure of the readme file form this repository has been used to inform the structure of this readme file. 
-* Snippets of code taken from sources not listed here are acknowledged and attributed throughout the source code using commented out text.  
+* Snippets of code taken from sources not listed here in the readme file are acknowledged and attributed throughout the source code using commented out text.  
 
 
 ### Media
