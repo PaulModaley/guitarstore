@@ -158,11 +158,19 @@ Mobile navigation![Nav3](https://github.com/PaulModaley/guitarstore/blob/6654a69
 
 #### Footer
 
-Footer on smaller screens![Footer1]()
+Footer on smaller screens![Footer1](https://github.com/PaulModaley/guitarstore/blob/09c6e7d457718d2584e53b766c9613991964a6ea/media/footer_smaller_screen.png)
 
-Footer on larger screens![Footer2]()
+Footer on larger screens![Footer2](https://github.com/PaulModaley/guitarstore/blob/09c6e7d457718d2584e53b766c9613991964a6ea/media/footer_large_screen.png)
 
+#### Product Page
 
+Product page displaying items including sort button![Products](https://github.com/PaulModaley/guitarstore/blob/09c6e7d457718d2584e53b766c9613991964a6ea/media/products.png)
+
+#### Shopping Cart Page
+
+Shopping cart containing an item![Cart1]()
+
+Empty shopping cart![Cart2]()
 
 ### Future Features
 
