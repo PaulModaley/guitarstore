@@ -170,7 +170,15 @@ Product page displaying items including sort button![Products](https://github.co
 
 Shopping cart containing an item![Cart1](https://github.com/PaulModaley/guitarstore/blob/bf0efb835bb47b6568654e3e080b465f7d1a7507/media/shopping_cart.png)
 
-Empty shopping cart![Cart2]()
+Empty shopping cart![Cart2](https://github.com/PaulModaley/guitarstore/blob/33b05a61eac3d47fd2fd14548dbdce0c132f0fde/media/empty_shopping_cart.png)
+
+#### Checkout Page
+
+Checkout page on larger screen![Checkout](https://github.com/PaulModaley/guitarstore/blob/33b05a61eac3d47fd2fd14548dbdce0c132f0fde/media/checkout.png)
+
+#### Contact Us Page
+
+Contact us page featuring form rendered using crispy forms![Contact]()
 
 ### Future Features
 
