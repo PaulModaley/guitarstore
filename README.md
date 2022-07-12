@@ -642,10 +642,9 @@ All testing and project barriers and solutions has been documented here - [TESTI
 
 ### Acknowledgements
 
-* Tutors and students of Code Institute and the Code Institute Slack Community for their helpfulness and assistance when needed.
-* My sister (Natasha) and her husband (Simone) for giving me the opportunity to design and create the initial website for _La Fraschetta_, a Delicatessen in which they wish to open in the near future.
-* My aunt (Luigina) for the time, effort, and love she put in to finding all the product and category images and writting the details for each, for this site.
-* My family, my husband for his devoted support, and my 5 year old for his patience while mom spent much of her time and attention on a computer screen.
-* Lastly, I would like to say a huge __Thank You__ to my mentor, __Tim Nelson__, for all his assistance, feedback, support, and pure dedication to helping me succeed with this project. I am so blessed to have had Tim Nelson as my mentor at Code Institute.
+* Tutors and students of Code Institute and the Code Institute Slack Community for their assistance and support.
+* My course mentor, Marcel Mulders, for his continuous support, assistance and dedication to enabling me to progress. 
+* To my employer, Reputation, for giving me the opportunity to study coding and software development.
+* Carla Buongiorno (former Code Institute student) whose repository was referenced in the creation of my project, including this readme file. 
 
 [Back to Top](#legato-music)
