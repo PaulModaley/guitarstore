@@ -182,22 +182,24 @@ Contact us page featuring form rendered using crispy forms![Contact](https://git
 
 ### Wishlist Page
 
-Wishlist page showing a user's saved item![Wish]()
+Wishlist page showing a user's saved item![Wish](https://github.com/PaulModaley/guitarstore/blob/fe035f75f00c4f57fa98be876e5b98cb1cc04bed/media/wishlist.png)
 
 ### Toasts
 
-Example of 'success message' displayed upon completion of a user action![Toasts]()
+Example of 'success message' displayed upon completion of a user action![Toasts](https://github.com/PaulModaley/guitarstore/blob/fe035f75f00c4f57fa98be876e5b98cb1cc04bed/media/toast_example.png)
+
+### Newsletter Signup Form
+
+Newsletter signup form located within the site footer![Newsletter]()
 
 ### Future Features
 
 * A 'Confirm to delete' modal, allowing the site users to confirm deletion of a product from their shopping cart to avoid accidental deletion.
 * The ability for a registered user to delete their account with a 'Confirm to delete' modal.
-* The ability for the logged in user to edit and delete their review(s).
-* The ability for the logged in user to Add To Wishlist and Remove From Wishlist from the Listed Products page.
+* The ability for the logged-in user to edit and delete their review(s).
+* The ability for the logged-in user to Add To Wishlist and Remove From Wishlist from the Listed Products page.
 * The ability for the store owner to edit and delete Categories.
 * A 'Confirm to delete' modal, allowing the store owner to confirm deletion of a product.or category in order to avoid accidental deletion.
-* Pagination
-* Contact Page
 
 [Back to Top](#legato-music)
 
