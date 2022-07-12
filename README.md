@@ -146,7 +146,7 @@ While the project relied on these wireframes, there are some differences between
 
 #### Navigation
 
-Shown below with active drop down menu.
+Shown below with active drop down menu.![Nav]Shown below with active drop down menu.
 (https://github.com/PaulModaley/guitarstore/blob/f07706e9d383029b59ff3952bd31b0013104d262/media/nav bar 1.png)
 
 Shown below with logged-in status of the user.
