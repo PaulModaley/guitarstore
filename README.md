@@ -168,7 +168,7 @@ Product page displaying items including sort button![Products](https://github.co
 
 #### Shopping Cart Page
 
-Shopping cart containing an item![Cart1]()
+Shopping cart containing an item![Cart1](https://github.com/PaulModaley/guitarstore/blob/bf0efb835bb47b6568654e3e080b465f7d1a7507/media/shopping_cart.png)
 
 Empty shopping cart![Cart2]()
 
