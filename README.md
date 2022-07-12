@@ -194,12 +194,13 @@ Newsletter signup form located within the site footer![Newsletter](https://githu
 
 ### Future Features
 
-* A 'Confirm to delete' modal, allowing the site users to confirm deletion of a product from their shopping cart to avoid accidental deletion.
-* The ability for a registered user to delete their account with a 'Confirm to delete' modal.
+* A 'confirm to delete' modal to enable site users to confirm deletion of a product from their shopping cart and avoid accidental deletion.
+* The ability for a registered user to delete their account with a 'confirm to delete' modal.
 * The ability for the logged-in user to edit and delete their review(s).
-* The ability for the logged-in user to Add To Wishlist and Remove From Wishlist from the Listed Products page.
-* The ability for the store owner to edit and delete Categories.
+* The ability for the logged-in user to add and remove items to/from the Wishlist directly from the list of products rather than only the product details page.
+* The ability for the store owner to edit and delete categories without having to access Django's admin panel.
 * A 'Confirm to delete' modal, allowing the store owner to confirm deletion of a product.or category in order to avoid accidental deletion.
+* A 'Register' modal to encourage non-registered users to open an account.
 
 [Back to Top](#legato-music)
 
