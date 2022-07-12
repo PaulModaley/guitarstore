@@ -140,10 +140,10 @@ While the project relied on these wireframes, there are some differences between
 ## Features
 
 * Home (Larger Screens)
-  * (https://github.com/PaulModaley/guitarstore/blob/22ac23e4b7d73e2225eb9fdfd8af344a4a62a51d/media/home page with hero.jpg)
+  * (https://github.com/PaulModaley/guitarstore/blob/93f82e5e15c8b9b1981116c52847a7b42a6398bc/media/home_page_hero.jpg)
 
 * Home (Smaller Screens)
-  * ![Home](https://github.com/PaulModaley/guitarstore/blob/22ac23e4b7d73e2225eb9fdfd8af344a4a62a51d/media/home page smaller screens.png)
+  * (https://github.com/PaulModaley/guitarstore/blob/93f82e5e15c8b9b1981116c52847a7b42a6398bc/media/home_page_smaller_screens.png)
 
 * Navigation Bar
   * ![Navigation Bar](https://github.com/PaulModaley/guitarstore/blob/22ac23e4b7d73e2225eb9fdfd8af344a4a62a51d/media/nav bar 1.png)
