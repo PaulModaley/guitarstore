@@ -102,11 +102,9 @@ Stripe provides some of the functionality for the website's payment system which
     
     #### Admin and Store Management
     
-    GitHub's project boards were utilised throughout the development process to track progress against the above user stories by shifting user stories from 'to do' to 'in progress' and eventually to 'done' as applicable. At the end of the development process, all the user stories were marked 'done' and placed in the appropriate column as illustrated by the screenshot below:
-    
-    ![image-20220711163054554](C:\Users\Paul Modaley\AppData\Roaming\Typora\typora-user-images\image-20220711163054554.png)
+    GitHub's project boards were utilised throughout the development process to track progress against the above user stories by shifting user stories from 'to do' to 'in progress' and eventually to 'done' as applicable. At the end of the development process, all the user stories were marked 'done' and placed in the appropriate column.
 
-[Back to Top](#la-fraschetta)
+[Back to Top](#legato-music)
 
 ---
 
@@ -231,7 +229,7 @@ While the project relied on these wireframes, there are some differences between
 * Pagination
 * Contact Page
 
-[Back to Top](#la-fraschetta)
+[Back to Top](#legato-music)
 
 ---
 
@@ -264,7 +262,7 @@ The navigation bar changes depending on user status and screen size:
 The diagram below illustrates the database structure used in this project.
 ![Database Schema](documentation/database/database.png)
 
-[Back to Top](#la-fraschetta)
+[Back to Top](#legato-music)
 
 ---
 
@@ -324,7 +322,7 @@ The diagram below illustrates the database structure used in this project.
 * [PEP8](http://pep8online.com/) was used to validate the python syntax.
 
 
-[Back to Top](#la-fraschetta)
+[Back to Top](#legato-music)
 
 ---
 
@@ -409,7 +407,7 @@ _Create a Heroku app, connect to Postgres database and deploy the app without st
     * `pip3 install dj_database_url`
     * `pip3 install psycopg2-binary`
     * `pip3 freeze > requirements.txt`
-  * In la-fraschetta > settings.py, add `import dj_database_url` at top of the page
+  * In legato-music > settings.py, add `import dj_database_url` at top of the page
   * Connect your manage.py file to your postgres database  
     ```
     DATABASES = {
@@ -514,7 +512,7 @@ Alternatively, if using Gitpod, you can click below to create your own workspace
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/CarlaBuongiorno/la_fraschetta)
 
-[Back to Top](#la-fraschetta)
+[Back to Top](#legato-music)
 
 ---
 
@@ -522,7 +520,7 @@ Alternatively, if using Gitpod, you can click below to create your own workspace
 
 All testing and project barriers and solutions has been documented here - [TESTING.md](https://github.com/CarlaBuongiorno/la_fraschetta/blob/master/TESTING.md)
 
-[Back to Top](#la-fraschetta)
+[Back to Top](#legato-music)
 
 ---
 
@@ -650,4 +648,4 @@ All testing and project barriers and solutions has been documented here - [TESTI
 * My family, my husband for his devoted support, and my 5 year old for his patience while mom spent much of her time and attention on a computer screen.
 * Lastly, I would like to say a huge __Thank You__ to my mentor, __Tim Nelson__, for all his assistance, feedback, support, and pure dedication to helping me succeed with this project. I am so blessed to have had Tim Nelson as my mentor at Code Institute.
 
-[Back to Top](#la-fraschetta)
+[Back to Top](#legato-music)
