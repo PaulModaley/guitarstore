@@ -741,7 +741,7 @@ PEOPLE - Legato Music sells products to musicians and beginners musicians who wa
 
 ## **Social Media**
 
-![Facebook Page](https://github.com/PaulModaley/guitarstore/blob/98a564b733e29ec84c8ec4b7cda04de18ba8e212/media/facebook.png)
+![Facebook Page](https://github.com/PaulModaley/guitarstore/blob/0f79d252f44f81c772cfc0c3b92cdfd2cc1e34d3/media/facebook.png)
 
 Legato Music aims to use Facebook to promote its products, services and offers to a wider audience. 
 
