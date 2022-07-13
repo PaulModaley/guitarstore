@@ -755,7 +755,9 @@ Home page | Clicking "Legato Music" in the navigation bar redirects to the home 
 All products page | When clicking the "All Products" link in the navigation bar, the category shows a dropdown list so I have access to more sort/filter options. The page heading indicates the users location on the site. | PASS
 Register page | Clicking the "register" link in the navigation bar redirects to the register page. The page heading indicates the users location on the site. | PASS
 Login / Logout page | Clicking the "login" or "logout links in the navigation bar redirects to the login or logout page. | PASS
-Basket page | When clicking the "cart" icon in the navigation bar, the browser redirects me to the cart page. The page heading indicates the users location on the site. | PASS
+Cart page | When clicking the "cart" icon in the navigation bar, the browser redirects me to the cart page. The page heading indicates the users location on the site. | PASS
+Wishlist page | When clicking the "wishlist" icon in the navigation bar, the browser redirects me to the wishlist page. The page heading indicates the users location on the site. | PASS
+Contact page | When clicking the "contact" icon in the navigation bar, the browser redirects me to the contact page. The page heading indicates the users location on the site. | PASS
 My Profile page | When clicking the "My profile" link in the navigation bar, the browser redirects me to my profile page. The page heading indicates the users location on the site. | PASS
 Product management page | When clicking the "product management" link as a superuser in the navigation bar, the browser redirects me to the product management page. The page heading indicates the users location on the site. | PASS
 Search bar | When searching for a keyword, the results will show products that contain the keyword in the product name or description. | PASS
