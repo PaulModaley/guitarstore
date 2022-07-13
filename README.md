@@ -751,9 +751,17 @@ To optimise the site for search engines, I employed the following strategies and
 Legato Music was created with the 5Ps of the marketing mix in mind:
 
 PRODUCT/SERVICE - An e-commerce site selling musical instruments and equipment for beginners, intermediate and advanced players. 
+
+
 PRICE - Products are priced competitively yet realistically reflecting the quality and range of goods available.
+
+
 PROMOTION - Legato Music shall be promoted through its SEO (keyword strategy), email marketing (newsletter), and social media promotion (Facebook page).
+
+
 PLACE - Legato Music exists solely online.
+
+
 PEOPLE - Legato Music sells products to musicians and beginners musicians who want the convenience of online shopping. 
 
 ## **Social Media**
