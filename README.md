@@ -241,29 +241,6 @@ Newsletter signup form located within the site footer![Newsletter](https://githu
 
 ## **Information Architecture**
 
-### Navigation bar
-
-The navigation bar changes depending on user status and screen size:
-
-| Nav Link                                      | Logged Out | Logged In (User) | Logged In (Admin) |
-| --------------------------------------------- | ---------- | ---------------- | ----------------- |
-| Logo (small screen)                           | &#10060;   | &#10060;         | &#10060;          |
-| Logo (large screen)                           | &#9989;    | &#9989;          | &#9989;           |
-| Home                                          | &#9989;    | &#9989;          | &#9989;           |
-| Delicatessen with dropdown list of Categories | &#9989;    | &#9989;          | &#9989;           |
-| Our Story                                     | &#9989;    | &#9989;          | &#9989;           |
-| Contact                                       | &#9989;    | &#9989;          | &#9989;           |
-| Search Our Site                               | &#9989;    | &#9989;          | &#9989;           |
-| My Account                                    | &#9989;    | &#9989;          | &#9989;           |
-| My Account dropdown - Login                   | &#9989;    | &#10060;         | &#10060;          |
-| My Account dropdown - Register                | &#9989;    | &#10060;         | &#10060;          |
-| My Account dropdown - Profile                 | &#10060;   | &#9989;          | &#9989;           |
-| My Account dropdown - Log Out                 | &#10060;   | &#9989;          | &#9989;           |
-| My Account dropdown - Add Category            | &#10060;   | &#10060;         | &#9989;           |
-| My Account dropdown - Add Product             | &#10060;   | &#10060;         | &#9989;           |
-| Wishlist                                      | &#10060;   | &#9989;          | &#9989;           |
-| Shopping Basket Icon                          | &#9989;    | &#9989;          | &#9989;           |
-
 ### Database Models
 
 Profile model:
@@ -489,23 +466,24 @@ class Subscribe(models.Model):
 
 ### Site Design
 
-* [Font Awesome](https://fontawesome.com/) was used to add the icons.
-* [Coolers.co](https://coolors.co/a71313-3c3cdf-0f0f0f-ffffff-198754-ffca02) was used to generate the colour palette in the readme.
-* [Google Fonts](https://fonts.google.com/) was used to import the _Suwannaphum_ and _Dancing Script_ font used within the site.
+* [Bootstrap](https://getbootstrap.com/) was used to ensure the website's responsivity and faster development.
+* [Font Awesome](https://fontawesome.com/) was used to add various icons, including the cart and wishlist icons.
+* [Scheme Color](https://www.schemecolor.com/music-store.php) was used to generate the colour palette in the readme.
+* [Google Fonts](https://fonts.google.com/) was used to import the 'Comfortaa' font used throughout the site.
 * [Favicon.io](https://favicon.io/favicon-converter/) was used to generate a favicon for the site using the site's logo.
 
 ### Hosting
-* [GitHub](https://github.com/) is used to store the code for this project after being pushed from Git.
+* [GitHub](https://github.com/) is used to store the code respository for this project after being commited from Git.
 * [Heroku](https://www.heroku.com) was used to deploy the live site.
 
 ### Databases Platform and Cloud Storage
-* [SQlite](https://www.sqlite.org/index.html) is the SQL database engine provided by default as part of Django and used during development.
+* [SQlite](https://www.sqlite.org/index.html) is the SQL database engine provided by default as part of the Django framework. It provides the database and backend functionality for Legato Music's functionality, including the product catalogue.
 * [Heroku Postgres](https://devcenter.heroku.com/articles/heroku-postgresql) is the SQL database service provided directly by Heroku for storing the site's data.
 * [Amazon AWS S3](https://s3.console.aws.amazon.com/s3) was used to host this project's images and static files.
 
 ### Frameworks and Libraries 
 
-* [Django](https://www.djangoproject.com/) was used as a Python web framework for its rapid development and clean, pragmatic design
+* [Django](https://www.djangoproject.com/) was used as a Python web framework to enable speedy development.
 * [pip](https://pip.pypa.io/en/stable/) was used to install the required dependencies for this site.
 * [Django-countries](https://pypi.org/project/django-countries/) was used for its pre-built country field containing all the valid country codes.
 * [Crispy forms](https://django-crispy-forms.readthedocs.io/en/latest/) was used to manage rendering behaviour and layout of Django forms.
@@ -518,13 +496,14 @@ class Subscribe(models.Model):
 ### Other Technologies
 
 * [Git](https://git-scm.com/) was used for version control by utilizing the Gitpod terminal to add and commit to Git and push to GitHub.
-* [drawSQL](https://drawsql.app/) was used to design the schema of the relational database.
+* Adobe Photoshop was used for image editing.
+* [Canva](https://www.canva.com/) was also used for image editing. 
 * [Balsamiq](https://balsamiq.com/) was used to create the wireframes during the design process.
-* [Am I Responsive Design](http://ami.responsivedesign.is/) was used for the screenshot in this repository's README.md and TESTING.md.
+* [Am I Responsive Design](http://ami.responsivedesign.is/) was used for the screenshot in this repository's README.md file.
 * [Google DevTools](https://developer.chrome.com/docs/devtools/) was used to check site responsiveness, and as a general debugger.
-* [Lighthouse](https://developers.google.com/web/tools/lighthouse/) was used to check the site's Performance, Accessibility, Best Practices, and SEO.
-* [Tinyjpg.com](https://tinyjpg.com/) was used to compress the images.
+* [Snipboard.io](https://snipboard.io/) was used to store and edit screenshots before adding them to the readme file.
 * [Gitpod](https://gitpod.io/) was used as a virtual IDE workspace to build this site.
+* [Black](https://black.readthedocs.io/en/stable/#) was used to speed up the process of formatting Python code.
 
 ### Testing
 
