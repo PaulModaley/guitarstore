@@ -715,7 +715,7 @@ Alternatively, if using Gitpod, you can click below to create your own workspace
 
 ## **Testing And Project Barrier Solutions**
 
-All testing and project barriers and solutions has been documented here - [TESTING.md](https://github.com/CarlaBuongiorno/la_fraschetta/blob/master/TESTING.md)
+
 
 [Back to Top](#legato-music)
 
@@ -771,7 +771,7 @@ Legato Music aims to use Facebook to promote its products, services and offers t
 ### Content
 
 * All product descriptions were written by Paul Modaley. 
-* All website copy, taglines and slogans was written by Paul Modaley.
+* Website copy, taglines and slogans were written by Paul Modaley.
 
 ### Acknowledgements
 
