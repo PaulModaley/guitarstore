@@ -735,6 +735,117 @@ All Python code was put through PEP8 online. No errors were detected.
 
 [Back to Top](#legato-music)
 
+## Manual Testing
+
+I have tested my site extensively within Google Chrome on multiple devices, including
+-   iPhone 5, 6, 7, 8, 9, X
+-   Samsung Galaxy S8+, S20 Ultra
+-   iPhone XS Max
+-   iPad Pro
+-   MacBook Pro
+
+Please find below my testing process for all pages via mobile and web:
+
+### Navigation Bar
+
+All Pages:
+TEST            | OUTCOME                          | PASS / FAIL  
+--------------- | -------------------------------- | ---------------
+Home page | Clicking "Legato Music" in the navigation bar redirects to the home page. | PASS
+All products page | When clicking the "All Products" link in the navigation bar, the category shows a dropdown list so I have access to more sort/filter options. The page heading indicates the users location on the site. | PASS
+Register page | Clicking the "register" link in the navigation bar redirects to the register page. The page heading indicates the users location on the site. | PASS
+Login / Logout page | Clicking the "login" or "logout links in the navigation bar redirects to the login or logout page. | PASS
+Basket page | When clicking the "cart" icon in the navigation bar, the browser redirects me to the cart page. The page heading indicates the users location on the site. | PASS
+My Profile page | When clicking the "My profile" link in the navigation bar, the browser redirects me to my profile page. The page heading indicates the users location on the site. | PASS
+Product management page | When clicking the "product management" link as a superuser in the navigation bar, the browser redirects me to the product management page. The page heading indicates the users location on the site. | PASS
+Search bar | When searching for a keyword, the results will show products that contain the keyword in the product name or description. | PASS
+Foreground & background colour | Checked foreground information is not distracted by background elements. | PASS
+Text | Checked that all fonts and colours used are consistent. | PASS
+
+
+### Footer
+
+All Pages:
+TEST            | OUTCOME                          | PASS / FAIL  
+--------------- | -------------------------------- | ---------------
+Subscribe to newsletter | Completion of the newsletter form in the footer results in the display of a success message. | PASS
+Facebook | Clicking the Facebook icon opens a new tab and redirects to the Facebook website, specifically Legato Music's Facebook page. | PASS
+Twitter | Clicking the Twitter icon opens a new tab and redirects to the Twitter website. | PASS
+Instagram | Clicking the Instagram icon opens a new tab and redirects to the Instagram website. | PASS
+LinkedIn | Clicking the LinkedIn icon opens a new tab and redirects to the LinkedIn website. | PASS
+
+### Home page
+TEST            | OUTCOME                          | PASS / FAIL  
+--------------- | -------------------------------- | ---------------
+Media | All media assets are displayed properly, have no (or minimal) pixelation or stretched images and are responsive on all devices. | PASS
+Responsiveness | Check every element on the page for consistent scalability in mobile, tablet and desktop view.| PASS
+
+### Products page
+TEST            | OUTCOME                          | PASS / FAIL  
+--------------- | -------------------------------- | ---------------
+Media | All media assets are displayed properly, have no pixelation or stretched images and are responsive on all devices. | PASS
+Responsiveness | Check every element on the page for consistent scalability in mobile, tablet and desktop view.| PASS
+Sort filter | Check the sort/filter functionality by selecting each option. Each option reloads the page and sorts the products in the corresponding order. | PASS
+Edit Button (SuperUser only) | Check the edit button is only accessible if the user is logged in as a SuperUser. | PASS
+Delete Button (SuperUser only) | Check the delete button is only accessible if the user is logged in as a SuperUser. | PASS
+
+### Products details page
+TEST            | OUTCOME                          | PASS / FAIL  
+--------------- | -------------------------------- | ---------------
+Media | All media assets are displayed properly, have no pixelation or stretched images and are responsive on all devices. | PASS
+Responsiveness | Check every element on the page for consistent scalability in mobile, tablet and desktop view.| PASS
+Weight selector | Check the weight selector functionality by selecting each option. Add each option to the basket to confirm the correct weight is selected. | PASS
+Quantity Selector | Check the quantity selector functionality by selecting minus and plus buttons where applicable. Adding a product to the basket to confirm the correct quantity selected is correct. | PASS
+Edit Button (SuperUser only) | Check the edit button is only accessible if the user is logged in as a SuperUser. | PASS
+Delete Button (SuperUser only) | Check the delete button is only accessible if the user is logged in as a SuperUser. | PASS
+
+### Shopping cart page
+TEST            | OUTCOME                          | PASS / FAIL  
+--------------- | -------------------------------- | ---------------
+Media | All media assets are displayed properly, have no (or minimal) pixelation or stretched images and are responsive on all devices. | PASS
+Responsiveness | Check every element on the page for consistent scalability in mobile, tablet and desktop view.| PASS
+Remove item from cart | Clicking the remove link on an item removes the item from the cart. | PASS
+Quantity Selector | Check the quantity selector functionality by selecting min and plus buttons where applicable. Adding a product to the cart to confirm the correct quantity selected is correct. | PASS
+Free delivery threshold | Adding products to the cart where the grand total value is under £50, the cart shows the free delivery warning message. The message disappears when the grand total is over £50. | PASS
+
+### Checkout page
+TEST            | OUTCOME                          | PASS / FAIL  
+--------------- | -------------------------------- | ---------------
+Media | All media assets are displayed properly, have no pixelation or stretched images and are responsive on all devices. | PASS
+Responsiveness | Check every element on the page for consistent scalability in mobile, tablet and desktop view.| PASS
+Checkout form | Filling in the form with the correct validation processes the order. | PASS
+Checkout form | Filling in the form with the incorrect validation shows errors messages. | PASS
+Save details checkout | Selecting the "Save this delivery information to my profile" checkbox, this saves/updates my profile details. | PASS
+Card authentication | Used the Stripe test card details and purposely failed authenticated to check for error messages. | PASS
+
+### Checkout success page
+TEST            | OUTCOME                          | PASS / FAIL  
+--------------- | -------------------------------- | ---------------
+Responsiveness | Check every element on the page for consistent scalability in mobile, tablet and desktop view.| PASS
+Order history | When clicking on an order number in the order history section, this takes me to a past order confirmation summary page. | PASS
+Updating my profile | When updating the default delivery information, this reflects on the checkout page. | PASS
+
+### Product management page
+TEST            | OUTCOME                          | PASS / FAIL  
+--------------- | -------------------------------- | ---------------
+Responsiveness | Check every element on the page for consistent scalability in mobile, tablet and desktop view.| PASS
+Adding a product | When filling out the form to add a new product, the product is added to the relevant category and is searchable via the search bar. | PASS
+Uploading an image | When uploading an image to a new product, the site shows the name of the file that will be uploaded. When checking the product details page, the image also shows. | PASS
+
+### Wishlist page
+TEST            | OUTCOME                          | PASS / FAIL  
+--------------- | -------------------------------- | ---------------
+Responsiveness | Check every element on the page for consistent scalability in mobile, tablet and desktop view.| PASS
+Adding an item to wishlist | When the wishlist (heart) icon is clicked on a product details page, the item is added to the user's wishlist. | PASS
+Removing an item from wishlist | When the remove (dustbin) icon is clicked on the wishlist page, the item is removed from the wishlist and a success message appears. The user is taken to the product detail page. | PASS
+
+### Contact page
+TEST            | OUTCOME                          | PASS / FAIL  
+--------------- | -------------------------------- | ---------------
+Responsiveness | Check every element on the page for consistent scalability in mobile, tablet and desktop view.| PASS
+Submitting the contact form | When all the fields are filled correctly and the user clicks 'submit', a success message appears. | PASS
+Incorrect or missing fields on contact form | When the user inputs invalid information or there is a missing field in the form, the form will not submit. Tooltips appear to notify the user of their error. | PASS
+
 ---
 ## **Search Engine Optimisation**
 
