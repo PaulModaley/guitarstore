@@ -511,35 +511,6 @@ class Subscribe(models.Model):
 * [Gitpod](https://gitpod.io/) was used as a virtual IDE workspace to build this site.
 * [Black](https://black.readthedocs.io/en/stable/#) was used to speed up the process of formatting Python code.
 
-### Testing
-
-* [W3C Markup Validation Service](https://validator.w3.org/) was used to test that the HTML is valid.
-* [W3C CSS Validation Service](http://jigsaw.w3.org/css-validator/) was used to test that the CSS is valid.
-* [JSHint](https://jshint.com/) was used to test that the JavaScript is valid.
-* [PEP8](http://pep8online.com/) was used to validate the python syntax.
-
-#### HTML
-
-All HTML pages were put through W3C and no errors were found.
-
-![HTML](https://github.com/PaulModaley/guitarstore/blob/6b9a5c6ed786e9b8628777b1be93ddd7193363e4/media/paul-legatomusic_home.png)
-
-#### CSS
-
-My root CSS file was put through W3C and no errors were found.
-
-![CSS](https://github.com/PaulModaley/guitarstore/blob/6b9a5c6ed786e9b8628777b1be93ddd7193363e4/media/CSS.png)
-
-#### JavaScript
-
-JSHint was used to check my JavaScript files for errors. Although several warnings were issued, no errors were detected.
-
-![JavaScript](https://github.com/PaulModaley/guitarstore/blob/6b9a5c6ed786e9b8628777b1be93ddd7193363e4/media/JShint.png)
-
-#### Python
-
-All Python code was put through PEP8 online. No errors were detected.
-
 [Back to Top](#legato-music)
 
 ---
@@ -734,9 +705,34 @@ Alternatively, if using Gitpod, you can click below to create your own workspace
 
 ---
 
-## **Testing And Project Barrier Solutions**
+## **Testing**
 
+* [W3C Markup Validation Service](https://validator.w3.org/) was used to test that the HTML is valid.
+* [W3C CSS Validation Service](http://jigsaw.w3.org/css-validator/) was used to test that the CSS is valid.
+* [JSHint](https://jshint.com/) was used to test that the JavaScript is valid.
+* [PEP8](http://pep8online.com/) was used to validate the python syntax.
 
+#### HTML
+
+All HTML pages were put through W3C and no errors were found.
+
+![HTML](https://github.com/PaulModaley/guitarstore/blob/6b9a5c6ed786e9b8628777b1be93ddd7193363e4/media/paul-legatomusic_home.png)
+
+#### CSS
+
+My root CSS file was put through W3C and no errors were found.
+
+![CSS](https://github.com/PaulModaley/guitarstore/blob/6b9a5c6ed786e9b8628777b1be93ddd7193363e4/media/CSS.png)
+
+#### JavaScript
+
+JSHint was used to check my JavaScript files for errors. Although several warnings were issued, no errors were detected.
+
+![JavaScript](https://github.com/PaulModaley/guitarstore/blob/6b9a5c6ed786e9b8628777b1be93ddd7193363e4/media/JShint.png)
+
+#### Python
+
+All Python code was put through PEP8 online. No errors were detected.
 
 [Back to Top](#legato-music)
 
