@@ -42,6 +42,12 @@ Stripe provides some of the functionality for the website's payment system which
 * [How to Fork it](#how-to-fork-it)
 * [Making a Local Clone](#making-a-local-clone)
 
+[Search Engine Optimisation](#search-engine-optimisation)
+
+[Marketing](#marketing)
+
+[Social Media](#social-media)
+
 [Testing and Project Barrier Solutions](#testing-and-project-barrier-solutions)
 
 [Credits](#credits)
@@ -714,6 +720,13 @@ All testing and project barriers and solutions has been documented here - [TESTI
 [Back to Top](#legato-music)
 
 ---
+## **Search Engine Optimisation**
+
+## **Marketing**
+
+## **Social Media**
+
+
 
 ## **Credits**
 
