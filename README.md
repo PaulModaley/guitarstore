@@ -174,6 +174,16 @@ Footer on larger screens![Footer2](https://github.com/PaulModaley/guitarstore/bl
 
 ### Registration
 
+Non-registered users may open an account view the 'Register' page accessible via the navigation at top, right hand side. During the registration process, users are asked to confirm their chosen password (desktop view).
+
+Once successfully regsitered, users when returning to the site may login via the navigation bar on the right hand side at the top of the page (desktop view).
+
+The same functioanlity can be accessed via the hamburger menu icon in mobile view. 
+
+Sign-in page![Login](https://github.com/PaulModaley/guitarstore/blob/eb1407f30f471c276e898c0a71f53949c18f1b9a/media/sign_in.png).
+
+Registration page![Register](https://github.com/PaulModaley/guitarstore/blob/eb1407f30f471c276e898c0a71f53949c18f1b9a/media/register.png)
+
 ### Product Page
 
 The user can view categories of products and sort them according to rating or by price using a dropdown menu. Individual products are displayed within cards which the user may click to view product details. 
