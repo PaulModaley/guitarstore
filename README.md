@@ -722,6 +722,13 @@ All testing and project barriers and solutions has been documented here - [TESTI
 ---
 ## **Search Engine Optimisation**
 
+To optimise the site for search engines, I employed the following strategies and techniques:
+
+* Added numerous long-tail and short-tail keywords to the meta tag within the projects base.html file
+* Keywords were selected based on their relevance to the products and the target audience as well as their search volumes and levels of competition around those keywords
+* To enable search engines to crawl the website, I have included a sitemap.xml file
+
+
 ## **Marketing**
 
 ## **Social Media**
