@@ -687,19 +687,18 @@ _Create and connect an Amazon bucket for storing images and static files._
 
 ### Making a Local Clone
 
-1. Log in to [GitHub](https://www.github.com) and locate the [Repository](https://github.com/CarlaBuongiorno/la_fraschetta) for this site.
+1. Log in to [GitHub](https://www.github.com) and locate the [Repository](https://github.com/PaulModaley/musicstore) for this site.
 2. Under the repository name, above the list of files, click "Code".
 3. Here you can either Clone or Download the repository.
 4. You should clone the repository using HTTPS, clicking on the icon to copy the link.
 5. Open Git Bash.
 6. Change the current working directory to the new location, where you want the cloned directory to be.
 7. Type `git clone`, and then paste the URL that was copied in Step 4.
-    * `git clone https://github.com/CarlaBuongiorno/la_fraschetta.git`
 8. Press Enter, and your local clone will be created.
 
 Alternatively, if using Gitpod, you can click below to create your own workspace using this repository.
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/CarlaBuongiorno/la_fraschetta)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/PaulModaley/musicstore)
 
 [Back to Top](#legato-music)
 
@@ -782,7 +781,7 @@ Legato Music aims to use Facebook to promote its products, services and offers t
 * [Django For Everybody - Full Python University Course](https://www.youtube.com/watch?v=o0XbHvKxw7Y&t=20867s) - referenced to enable me to implement functionality using the Django framework.
 * [Bootstrap](https://getbootstrap.com/) was referenced to enable the responsivity, layout and styling of Legato Music. 
 * [CSS Tricks](https://css-tricks.com/a-clever-sticky-footer-technique/) - Enabled me to position the footer at the bottom of the page.
-* [Carla Buongiorno's La Fraschetta Repository](https://github.com/CarlaBuongiorno/la_fraschetta) - Code for the 'wishlist' features was borrowed and adapted from this repository. Moreover, the structure of the readme file form this repository has been used to inform the structure of this readme file. 
+* [Carla Buongiorno's La Fraschetta Repository](https://github.com/CarlaBuongiorno/la_fraschetta) - Code for the 'wishlist' feature was adapted from this repository. Moreover, the structure of the readme file form this repository has been used to inform the structure of this readme file. 
 * [iKelvvv's MS5 Repository](https://github.com/iKelvvv/MS5/blob/main/README.md) - Readme file was referenced to inform the structure and development of my readme file for this project. 
 * [30 Seconds of Code](https://www.30secondsofcode.org/css/s/hover-underline-animation) - CSS for the underline animation of the navigation buttons.
 * Other snippets of code taken from sources not listed here in the readme file are acknowledged and attributed throughout the source code using commented out text.  
