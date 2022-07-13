@@ -720,7 +720,7 @@ All testing and project barriers and solutions has been documented here - [TESTI
 ### Code
 
 * [Code Institute](https://codeinstitute.net/) ecommerce walkthrough informed the creation of this project, including:
-  * Code from Code Institute's, [Boutique Ado](https://boutique-ado-carla-buongiorno.herokuapp.com/) Mini Project Walkthrough by Chris Zielinski.
+* Code from Code Institute's, [Boutique Ado](https://boutique-ado-carla-buongiorno.herokuapp.com/) Mini Project Walkthrough by Chris Zielinski.
 * [Stackoverflow](https://stackoverflow.com/) was referenced frequently to enable me to fix bugs and setup functionality.
 * My mentor, Marcel Mulders, assisted me with deploying the project to Heroku and the set up of AWS.
 * [CSS Tricks](https://css-tricks.com/snippets/css/css-triangle/) - enabled triangular pointers for toast 'success' messages. 
@@ -728,7 +728,9 @@ All testing and project barriers and solutions has been documented here - [TESTI
 * [Bootstrap](https://getbootstrap.com/) was referenced to enable the responsivity, layout and styling of Legato Music. 
 * [CSS Tricks](https://css-tricks.com/a-clever-sticky-footer-technique/) - Enabled me to position the footer at the bottom of the page.
 * [Carla Buongiorno's La Fraschetta Repository](https://github.com/CarlaBuongiorno/la_fraschetta) - Code for the 'wishlist' features was borrowed and adapted from this repository. Moreover, the structure of the readme file form this repository has been used to inform the structure of this readme file. 
-* Snippets of code taken from sources not listed here in the readme file are acknowledged and attributed throughout the source code using commented out text.  
+* [iKelvvv's MS5 Repository](https://github.com/iKelvvv/MS5/blob/main/README.md) - Readme file was referenced to inform the structure and development of my readme file for this project. 
+* [30 Seconds of Code](https://www.30secondsofcode.org/css/s/hover-underline-animation) - CSS for the underline animation of the navigation buttons.
+* Other snippets of code taken from sources not listed here in the readme file are acknowledged and attributed throughout the source code using commented out text.  
 
 
 ### Media
