@@ -134,18 +134,26 @@ Desktop![Desktop](https://github.com/PaulModaley/guitarstore/blob/0af6feb6c98f11
 Mobile![Mobile](https://github.com/PaulModaley/guitarstore/blob/dcec81588bc4e3a41a275051d5749a562108c8be/media/Mobile.png)
 
 
-While the project relied on these wireframes, there are some differences between the wireframes and the final product due to time constraints and change of mind for different/better UI.
+While the project development was guided by these wireframes, there are differences between the wireframes and the final product which came about as a result of creative experimentation and design changes to ensure a better user experience.
 
 
 ## Features
 
 ### Home Page
 
+Featuring a distinctive hero image and tagline, the home page presents the user various options to access product categories and other functions on the website. By clicking the logo/website title displayed at the top of the screen, the user can return to the home page from any other page of the website. Organised into several rows and sections, the home page design ensures ease-of-navigation for the user.
+
 Shown below on larger screen![Home](https://github.com/PaulModaley/guitarstore/blob/767912d0bca06699df433b36889ebb8c983a1cbd/media/home_page_hero.jpg)
 
 Shown here on smaller screen![Home2](https://github.com/PaulModaley/guitarstore/blob/767912d0bca06699df433b36889ebb8c983a1cbd/media/home_page_smaller_screens.png)
 
 ### Navigation
+
+The website features responsive navigation bars. On larger screens, one navigation bar on the left side of the screen, enables users to go to particular product categories while the navigation bar to the upper-right of the screen enables the user to login/logout, access their profile, view the wishlist and checkout.
+
+On smaller screens, the navigation bars collapse to a single hamburger menu but all the functionality of the navigation bars is retained. 
+
+Crucially, the navigation's drop down items change to indicate the logged-in/out status of the user. 
 
 Shown below with active drop down menu![Nav](https://github.com/PaulModaley/guitarstore/blob/76027a471a2bce33f36a7b85d32378b43936ec16/media/navbar1.png)
 
@@ -158,15 +166,23 @@ Mobile navigation![Nav3](https://github.com/PaulModaley/guitarstore/blob/6654a69
 
 ### Footer
 
+The footer adapts to fit screens of various sizes. Placed within the footer are social media icons, which direct to social media pages, and a newsletter sign up form.
+
 Footer on smaller screens![Footer1](https://github.com/PaulModaley/guitarstore/blob/09c6e7d457718d2584e53b766c9613991964a6ea/media/footer_smaller_screen.png)
 
 Footer on larger screens![Footer2](https://github.com/PaulModaley/guitarstore/blob/09c6e7d457718d2584e53b766c9613991964a6ea/media/footer_large_screen.png)
 
+### Registration
+
 ### Product Page
+
+The user can view categories of products and sort them according to rating or by price using a dropdown menu. Individual products are displayed within cards which the user may click to view product details. 
 
 Product page displaying items including sort button![Products](https://github.com/PaulModaley/guitarstore/blob/09c6e7d457718d2584e53b766c9613991964a6ea/media/products.png)
 
 ### Shopping Cart Page
+
+From the shopping cart page, the user can view items they have added to the shopping cart prior to checkout. Displaying items in a tabular format, the checkout page features buttons to add or remove items from the shopping cart while the subtotal and total costs of items displays lower down the page.
 
 Shopping cart containing an item![Cart1](https://github.com/PaulModaley/guitarstore/blob/bf0efb835bb47b6568654e3e080b465f7d1a7507/media/shopping_cart.png)
 
@@ -174,13 +190,19 @@ Empty shopping cart![Cart2](https://github.com/PaulModaley/guitarstore/blob/33b0
 
 ### Checkout Page
 
+To checkout and make payment for items, the user must complete a form including payment information. Upon successful completion of the form, the page redirects to a confirmation page and a 'success' message is displayed to the user.
+
 Checkout page on larger screen![Checkout](https://github.com/PaulModaley/guitarstore/blob/33b05a61eac3d47fd2fd14548dbdce0c132f0fde/media/checkout.png)
 
 ### Contact Us Page
 
+Users may submit the contact form for general queries.
+
 Contact us page featuring form rendered using crispy forms![Contact](https://github.com/PaulModaley/guitarstore/blob/064037f3387af44074b7ef5f9423f48fac68fcd2/media/contact_us.png)
 
 ### Wishlist Page
+
+Users may add items to the wishlist from any product details page. 
 
 Wishlist page showing a user's saved item![Wish](https://github.com/PaulModaley/guitarstore/blob/fe035f75f00c4f57fa98be876e5b98cb1cc04bed/media/wishlist.png)
 
@@ -201,6 +223,7 @@ Newsletter signup form located within the site footer![Newsletter](https://githu
 * The ability for the store owner to edit and delete categories without having to access Django's admin panel.
 * A 'Confirm to delete' modal, allowing the store owner to confirm deletion of a product.or category in order to avoid accidental deletion.
 * A 'Register' modal to encourage non-registered users to open an account.
+* The ability to create custom wishlist names so that the user may create wishlists based on a product type or around seasonality (e.g. a Christmas wishlist)
 
 [Back to Top](#legato-music)
 
