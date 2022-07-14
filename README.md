@@ -912,6 +912,7 @@ Legato Music aims to use Facebook to promote its products, services and offers t
 
 ### Acknowledgements
 
+* To my family and my wife in particular for being incredibly supportive and encouraging.
 * Tutors and students of Code Institute and the Code Institute Slack Community for their assistance and support.
 * My course mentor, Marcel Mulders, for his continuous support, assistance and dedication to enabling me to progress. 
 * To my employer, Reputation, for giving me the opportunity to study coding and software development.
