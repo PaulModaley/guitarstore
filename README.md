@@ -682,7 +682,7 @@ _Create and connect an Amazon bucket for storing images and static files._
 ### How to Fork it
 
 1. Login or Sign Up to [GitHub](www.github.com).
-2. On GitHub, go to [CarlaBuongiorno/la_fraschetta](https://github.com/CarlaBuongiorno/la_fraschetta).
+2. On GitHub, go to [PaulModaley/musicstore](https://github.com/PaulModaley/musicstore).
 3. In the top right, click "Fork".
 
 ### Making a Local Clone
