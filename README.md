@@ -476,7 +476,6 @@ class Subscribe(models.Model):
 * [Font Awesome](https://fontawesome.com/) was used to add various icons, including the cart and wishlist icons.
 * [Scheme Color](https://www.schemecolor.com/music-store.php) was used to generate the colour palette in the readme.
 * [Google Fonts](https://fonts.google.com/) was used to import the 'Comfortaa' font used throughout the site.
-* [Favicon.io](https://favicon.io/favicon-converter/) was used to generate a favicon for the site using the site's logo.
 
 ### Hosting
 * [GitHub](https://github.com/) is used to store the code respository for this project after being commited from Git.
