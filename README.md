@@ -869,7 +869,7 @@ PRICE - Products are priced competitively yet realistically reflecting the quali
 PROMOTION - Legato Music shall be promoted through its SEO (keyword strategy), email marketing (newsletter), and social media promotion (Facebook page).
 
 
-PLACE - Legato Music exists solely online.
+PLACE - Legato Music sells solely online.
 
 
 PEOPLE - Legato Music sells products to musicians and beginners musicians who want the convenience of online shopping. 
@@ -884,15 +884,14 @@ Legato Music aims to use Facebook to promote its products, services and offers t
 
 ### Code
 
-* [Code Institute](https://codeinstitute.net/) ecommerce walkthrough informed the creation of this project, including:
-* Code from Code Institute's, [Boutique Ado](https://boutique-ado-carla-buongiorno.herokuapp.com/) Mini Project Walkthrough by Chris Zielinski.
+* [Code Institute](https://codeinstitute.net/) ecommerce walkthrough informed the creation of this project, including [Boutique Ado](https://boutique-ado-carla-buongiorno.herokuapp.com/) - Mini Project Walkthrough by Chris Zielinski.
 * [Stackoverflow](https://stackoverflow.com/) was referenced frequently to enable me to fix bugs and setup functionality.
 * My mentor, Marcel Mulders, assisted me with deploying the project to Heroku and the set up of AWS.
 * [CSS Tricks](https://css-tricks.com/snippets/css/css-triangle/) - enabled triangular pointers for toast 'success' messages. 
 * [Django For Everybody - Full Python University Course](https://www.youtube.com/watch?v=o0XbHvKxw7Y&t=20867s) - referenced to enable me to implement functionality using the Django framework.
 * [Bootstrap](https://getbootstrap.com/) was referenced to enable the responsivity, layout and styling of Legato Music. 
 * [CSS Tricks](https://css-tricks.com/a-clever-sticky-footer-technique/) - Enabled me to position the footer at the bottom of the page.
-* [Carla Buongiorno's La Fraschetta Repository](https://github.com/CarlaBuongiorno/la_fraschetta) - Code for the 'wishlist' feature was adapted from this repository. Moreover, the structure of the readme file form this repository has been used to inform the structure of this readme file. 
+* [Carla Buongiorno's La Fraschetta Repository](https://github.com/CarlaBuongiorno/la_fraschetta) - Code for the 'wishlist' feature was adapted from this repository. Moreover, the structure of the readme file form this repository has been used to inform this readme file, including the 'Deployment' section which outlines an identical process undertaken in the deployment of Legato Music.
 * [iKelvvv's MS5 Repository](https://github.com/iKelvvv/MS5/blob/main/README.md) - Readme file was referenced to inform the structure and development of my readme file for this project. 
 * [30 Seconds of Code](https://www.30secondsofcode.org/css/s/hover-underline-animation) - CSS for the underline animation of the navigation buttons.
 * Other snippets of code taken from sources not listed here in the readme file are acknowledged and attributed throughout the source code using commented out text.  
@@ -901,7 +900,7 @@ Legato Music aims to use Facebook to promote its products, services and offers t
 ### Media
 
 * The hero image came from Getty Images but was edited by Paul Modaley using Canva and Photoshop.
-* The product images came from various sources including Getty Images and Google. 
+* The product images came from various sources including Getty Images, Canva and Google. 
 
 ### Content
 
@@ -911,9 +910,9 @@ Legato Music aims to use Facebook to promote its products, services and offers t
 ### Acknowledgements
 
 * To my family and my wife in particular for being incredibly supportive and encouraging.
-* Tutors and students of Code Institute and the Code Institute Slack Community for their assistance and support.
+* Tutors and students (past and present) of Code Institute and the Code Institute Slack Community for their assistance and support.
 * My course mentor, Marcel Mulders, for his continuous support, assistance and dedication to enabling me to progress. 
-* To my employer, Reputation, for giving me the opportunity to study coding and software development.
+* To my employer, [Reputation](https://reputation.com), for giving me the opportunity to study coding and software development.
 * Carla Buongiorno (former Code Institute student) whose repository was referenced in the creation of my project, including this readme file. 
 
 [Back to Top](#legato-music)
